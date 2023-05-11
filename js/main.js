@@ -98,7 +98,7 @@ $(document).ready(function () {
   var $mainCounter = $mainVisual.find(".main-visual-conuter");
   var mainVisualLength = $mainVisualItem.length;
 
-  var autoPlaySpeed = 5000;
+  var autoPlaySpeed = 7000;
   var interleaveOffset = 0.75;
   var swiperOptions = {
     loop: true,
