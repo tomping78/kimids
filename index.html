@@ -73,6 +73,21 @@
       href="css/plugin/magnific-popup.css"
     />
     <link rel="stylesheet" type="text/css" href="css/plugin/swiper.css" />
+    <link
+      rel="preload"
+      href="css/evol.css"
+      data-rocket-async="style"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      onerror="this.removeAttribute('data-rocket-async')"
+      media="all"
+      data-minify="1"
+    />
+    <script
+      type="text/javascript"
+      src="js/jquery.min.js?ver=3.6.4"
+      id="jquery-core-js"
+    ></script>
     <!--[if lte IE 9]>
       <link rel="stylesheet" href="css/ie9.css" />
     <![endif]-->
@@ -446,6 +461,7 @@
                           no-repeat 50% 50%;
                       "
                     ></div>
+
                     <div class="main-visual-txt-con">
                       <div class="main-visual-txt-box area-1400">
                         <div class="main-visual-txt-inner">
@@ -483,6 +499,61 @@
                   </div>
                 </div>
                 <div class="main-slider-item swiper-slide">
+                  <rs-module-wrap
+                    id="rev_slider_323_1_wrapper"
+                    data-source="gallery"
+                    style="
+                      visibility: hidden;
+                      background: transparent;
+                      padding: 0;
+                    "
+                  >
+                    <rs-module
+                      id="rev_slider_323_1"
+                      class="rs-respect-topbar"
+                      data-version="6.6.13"
+                    >
+                      <rs-slides style="overflow: hidden; position: absolute">
+                        <rs-slide
+                          style="position: absolute"
+                          data-key="rs-788"
+                          data-title="Example One"
+                          data-thumb="img/slide1.jpg"
+                          data-anim="r:0;"
+                          data-in="o:0;e:power4.out;"
+                          data-out="e:power4.out;"
+                          data-rsparticles='{"enable":true,"hideOnMobile":false,"particles":{"size":10,"sizeMin":0.5},"styles":{"lines":{"enable":true,"color":"#ffffff","opacity":20,"distance":200},"particle":{"color":"#ffffff","opacity":10,"opacityMin":25}},"movement":{"speed":3,"straight":false},"interactivity":{"hoverMode":"bubble"},"bubble":{"size":20,"opacity":30},"pulse":{"size":{"min":0.5}}}'
+                        >
+                          <img
+                            src="img/dummy.png"
+                            alt="Example One"
+                            title="Particle Effect One Slider"
+                            class="rev-slidebg tp-rs-img rs-lazyload"
+                            data-lazyload="img/transparent.png"
+                            data-bg="c:#ffffff;"
+                            data-no-retina
+                          />
+                          <rs-layer
+                            id="slider-323-slide-788-layer-4"
+                            class="rs-noevents"
+                            data-type="image"
+                            data-xy="x:c;y:m;"
+                            data-text="l:22;a:inherit;"
+                            data-dim="w:['100%','100%','100%','100%'];h:['100%','100%','100%','100%'];"
+                            data-basealign="slide"
+                            data-rsp_o="off"
+                            data-wrpcls="tp-nopointer"
+                            data-rsp_bd="off"
+                            data-blendmode="screen"
+                            data-frame_1="e:power4.out;st:600;sp:1500;sR:600;"
+                            data-frame_999="o:0;e:power4.out;st:w;sp:1500;sR:6900;"
+                            style="z-index: 5"
+                          >
+                          </rs-layer>
+                        </rs-slide>
+                      </rs-slides>
+                    </rs-module>
+                  </rs-module-wrap>
                   <div class="media-wrapper slide-inner main-visual-item-inner">
                     <div
                       class="main-visual-img-con"
@@ -575,6 +646,7 @@
               </div>
             </div>
           </article>
+
           <div class="main-visual-control cm-style-control">
             <div class="control-inner">
               <span class="pause-btn" id="mainPauseBtn">
@@ -610,7 +682,7 @@
             <span class="txt"></span>
             <span class="icon"></span>
           </div>
-          <div class="main-bk-bg"></div>
+          <div class="main-bg"></div>
         </section>
 
         <!-- company -->
@@ -636,7 +708,7 @@
                     data-speed-delay="0.3"
                   >
                     오랜 기간 축적된 기술과 실무경험을 바탕으로 전문 기술인력을
-                    보유하고 있으며<br />
+                    보유하고 있으며,<br />
                     최적의 시스템 구축이 가능하도록 지속적인 교육과 검증을
                     통한<br />
                     우수한 기술지원능력을 적극 지원하고 있습니다.
@@ -693,9 +765,10 @@
                 data-speed="0"
                 data-speed-delay="0.3"
               >
-                10년 이상 연구개발 경험을 보유하고 있으며 에너지 성능평가 분야
-                <br class="pc-br" />및 M&V 분야의 사업 및 연구를 진행하고
-                있습니다.
+                키미디에스가 고객의 성공을 위해 묵묵하게 걸어온 길을 발판삼아<br
+                  class="pc-br"
+                />
+                계속 전진해 나아가겠습니다.
               </p>
             </div>
           </div>
@@ -739,10 +812,7 @@
             <div class="swiper main-public-slide">
               <ul class="swiper-wrapper">
                 <li class="swiper-slide public-slide-item">
-                  <a
-                    href="https://content.v.daum.net/v/EqvuV2xad8"
-                    target="_BLANK"
-                  >
+                  <a href="#" target="_blank">
                     <div class="cate-date font-mont">
                       <span class="cate">언론보도</span>
                       <span class="date">22. 02. 07</span>
@@ -756,10 +826,7 @@
                   </a>
                 </li>
                 <li class="swiper-slide public-slide-item">
-                  <a
-                    href="https://www.venturesquare.net/842290"
-                    target="_BLANK"
-                  >
+                  <a href="#" target="_blank">
                     <div class="cate-date font-mont">
                       <span class="cate">언론보도</span>
                       <span class="date">22. 01. 13</span>
@@ -773,10 +840,7 @@
                   </a>
                 </li>
                 <li class="swiper-slide public-slide-item">
-                  <a
-                    href="https://www.nextunicorn.kr/newsroom/4ddb3b07f6014cf8?utm_source=email&amp;utm_campaign=ENU&amp;utm_content=2843485f9a33996b7082f91e55047962"
-                    target="_BLANK"
-                  >
+                  <a href="#" target="_blank">
                     <div class="cate-date font-mont">
                       <span class="cate">언론보도</span>
                       <span class="date">22. 01. 13</span>
@@ -791,10 +855,7 @@
                   </a>
                 </li>
                 <li class="swiper-slide public-slide-item">
-                  <a
-                    href="https://www.venturesquare.net/846449"
-                    target="_BLANK"
-                  >
+                  <a href="#" target="_blank">
                     <div class="cate-date font-mont">
                       <span class="cate">언론보도</span>
                       <span class="date">22. 01. 12</span>
@@ -809,7 +870,7 @@
                   </a>
                 </li>
                 <li class="swiper-slide public-slide-item">
-                  <a href="https://platum.kr/archives/178735" target="_BLANK">
+                  <a href="#" target="_blank">
                     <div class="cate-date font-mont">
                       <span class="cate">언론보도</span>
                       <span class="date">22. 01. 12</span>
@@ -824,10 +885,7 @@
                   </a>
                 </li>
                 <li class="swiper-slide public-slide-item">
-                  <a
-                    href="http://kr.aving.net/news/view.php?articleId=1659085&amp;Branch_ID=kr&amp;rssid=naver&amp;mn_name=news"
-                    target="_BLANK"
-                  >
+                  <a href="#" target="_blank">
                     <div class="cate-date font-mont">
                       <span class="cate">언론보도</span>
                       <span class="date">22. 01. 12</span>
@@ -842,10 +900,7 @@
                   </a>
                 </li>
                 <li class="swiper-slide public-slide-item">
-                  <a
-                    href="http://kr.aving.net/news/view.php?articleId=1657876&amp;Branch_ID=kr&amp;rssid=naver&amp;mn_name=news"
-                    target="_BLANK"
-                  >
+                  <a href="#" target="_blank">
                     <div class="cate-date font-mont">
                       <span class="cate">언론보도</span>
                       <span class="date">22. 01. 12</span>
@@ -860,10 +915,7 @@
                   </a>
                 </li>
                 <li class="swiper-slide public-slide-item">
-                  <a
-                    href="https://www.ilovepc.co.kr/news/articleView.html?idxno=41594"
-                    target="_BLANK"
-                  >
+                  <a href="#" target="_blank">
                     <div class="cate-date font-mont">
                       <span class="cate">언론보도</span>
                       <span class="date">22. 01. 12</span>
@@ -874,41 +926,6 @@
                     </h3>
                     <!-- <p class="txt line-clamp2"></p> -->
                     <p class="txt text-ellipsis">출처 - 스마트PC사랑</p>
-                    <i class="xi-long-arrow-right"></i>
-                  </a>
-                </li>
-                <li class="swiper-slide public-slide-item">
-                  <a
-                    href="https://www.boannews.com/media/view.asp?idx=102263&amp;kind=2"
-                    target="_BLANK"
-                  >
-                    <div class="cate-date font-mont">
-                      <span class="cate">언론보도</span>
-                      <span class="date">22. 01. 12</span>
-                    </div>
-                    <h3 class="tit line-clamp2">
-                      우리나라 미래 산업을 선도할 우수 산업융합 사업모델
-                      선정한다
-                    </h3>
-                    <!-- <p class="txt line-clamp2"></p> -->
-                    <p class="txt text-ellipsis">출처 - 보안뉴스</p>
-                    <i class="xi-long-arrow-right"></i>
-                  </a>
-                </li>
-                <li class="swiper-slide public-slide-item">
-                  <a
-                    href="https://www.news1.kr/articles/?4486873"
-                    target="_BLANK"
-                  >
-                    <div class="cate-date font-mont">
-                      <span class="cate">언론보도</span>
-                      <span class="date">22. 01. 12</span>
-                    </div>
-                    <h3 class="tit line-clamp2">
-                      무역협회, 국민과 함께 '산업기술 융합 아이디어' 발굴
-                    </h3>
-                    <!-- <p class="txt line-clamp2"></p> -->
-                    <p class="txt text-ellipsis">출처 - 뉴스1</p>
                     <i class="xi-long-arrow-right"></i>
                   </a>
                 </li>
@@ -1096,6 +1113,125 @@
             '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button"><i class="xi-angle-right-thin"></i></button>',
         });
       });
+    </script>
+
+    <script>
+      window.RS_MODULES = window.RS_MODULES || {};
+      window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+      window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+      window.RS_MODULES.defered = true;
+
+      window.RS_MODULES.waiting = window.RS_MODULES.waiting.concat([
+        "particles",
+      ]);
+    </script>
+
+    <script
+      type="text/javascript"
+      src="js/motion.path.min.js"
+      defer
+      async
+      id="tp-tools-js"
+    ></script>
+    <script
+      rel="preload"
+      type="text/javascript"
+      src="js/rolls.min.js"
+      defer
+      async
+      id="revmin-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/particles.min.js"
+      defer
+      async
+      id="rs-particles-front-js"
+    ></script>
+    <script id="rs-initialisation-scripts">
+      var tpj = jQuery;
+
+      var revapi323, revapi1211, revapi4;
+      RS_MODULES.modules["revslider3231"] = {
+        once:
+          RS_MODULES.modules["revslider3231"] !== undefined
+            ? RS_MODULES.modules["revslider3231"].once
+            : undefined,
+        init: function () {
+          window.revapi323 =
+            window.revapi323 === undefined ||
+            window.revapi323 === null ||
+            window.revapi323.length === 0
+              ? document.getElementById("rev_slider_323_1")
+              : window.revapi323;
+          if (
+            window.revapi323 === null ||
+            window.revapi323 === undefined ||
+            window.revapi323.length == 0
+          ) {
+            window.revapi323initTry =
+              window.revapi323initTry === undefined
+                ? 0
+                : window.revapi323initTry + 1;
+            if (window.revapi323initTry < 20)
+              requestAnimationFrame(function () {
+                RS_MODULES.modules["revslider3231"].init();
+              });
+            return;
+          }
+          window.revapi323 = jQuery(window.revapi323);
+          if (window.revapi323.revolution == undefined) {
+            revslider_showDoubleJqueryError("rev_slider_323_1");
+            return;
+          }
+          revapi323.revolutionInit({
+            revapi: "revapi323",
+            sliderLayout: "fullscreen",
+            visibilityLevels: "1500,1240,778,480",
+            gridwidth: "1240,1024,778,480",
+            gridheight: "868,768,960,720",
+            lazyType: "smart",
+            perspective: 600,
+            perspectiveType: "local",
+            lazyloaddata: "lazy-src",
+            lazyOnBg: true,
+            editorheight: "868,768,960,720",
+            responsiveLevels: "1500,1240,778,480",
+            fullScreenOffsetContainer: "#masthead",
+            fullScreenOffset: "0px",
+            progressBar: { disableProgressBar: true },
+            navigation: {
+              mouseScrollNavigation: false,
+              onHoverStop: false,
+              arrows: {
+                enable: true,
+                style: "custom",
+                left: {
+                  h_align: "center",
+                  v_align: "bottom",
+                  h_offset: -20,
+                },
+                right: {
+                  h_align: "center",
+                  v_align: "bottom",
+                },
+              },
+            },
+            viewPort: {
+              global: true,
+              globalDist: "-200px",
+              enable: false,
+              visible_area: "20%",
+            },
+            fallbacks: {
+              allowHTML5AutoPlayOnAndroid: true,
+            },
+          });
+
+          if (typeof RsParticlesAddOn !== "undefined")
+            RsParticlesAddOn(revapi323);
+        },
+      }; // End of RevInitScript
     </script>
   </body>
 </html>

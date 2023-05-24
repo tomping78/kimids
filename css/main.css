@@ -76,6 +76,7 @@
 }
 .main-slider-item .main-visual-txt-inner {
   margin-top: 6rem;
+  position: relative;
 }
 .main-slider-item .main-visual-txt-con .main-visual-txt1,
 .main-slider-item .main-visual-txt-con .main-visual-txt2,
@@ -109,6 +110,8 @@
 
 .main-visual-txt-con .main-visual-more-btn {
   opacity: 0;
+  position: relative;
+  z-index: 777;
 }
 .main-visual-txt-con .main-visual-more-btn a {
   padding: 0 60px 0 43px;

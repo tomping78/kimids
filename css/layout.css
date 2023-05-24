@@ -135,7 +135,6 @@ td {
 }
 #header .logo img {
   display: block;
-  vertical-align: top;
   transition: opacity 0.3s;
   position: absolute;
   top: 5px;
@@ -287,7 +286,7 @@ td {
   z-index: 100;
   display: block;
   line-height: 14rem; /*padding:0 40px;*/
-  width: 17rem;
+  width: 20rem;
   text-align: center;
   color: #fff;
   font-size: 1.8rem;

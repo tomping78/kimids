@@ -8,14 +8,9 @@ setTimeout(function () {
 }, 100);
 
 $(document).ready(function () {
-  $(".main-bk-bg").animate(
-    { opacity: "0" },
-    1300,
-    "easeInOutCubic",
-    function () {
-      $(".main-bk-bg").css("visibility", "hidden");
-    }
-  );
+  $(".main-bg").animate({ opacity: "0" }, 1300, "easeInOutCubic", function () {
+    $(".main-bg").css("visibility", "hidden");
+  });
 
   if ($.exists("#fullpage")) {
     var $fullPage = $("#fullpage");
@@ -99,7 +94,7 @@ $(document).ready(function () {
   var mainVisualLength = $mainVisualItem.length;
 
   var autoPlaySpeed = 7000;
-  var interleaveOffset = 0.75;
+  var interleaveOffset = 0.5;
   var swiperOptions = {
     loop: true,
     effect: "fade",
@@ -324,7 +319,7 @@ $(document).ready(function () {
   var $mainPublicCounter = $mainPublicCon.find(".main-visual-conuter");
   var mainPublicLength = $mainPublicItem.length;
 
-  var autoPlaySpeed = 3500;
+  var autoPlaySpeed = 7000;
   var interleaveOffset = 0.5;
   var swiperOptions = {
     loop: true,
