@@ -408,6 +408,7 @@
 
 /* ******************  메인 컨텐츠 ********************** */
 /* -------- 메인 컨텐츠 :: 공통 -------- */
+/* 공통 :: 타이틀 */
 .main-tit-box .main-tit {
   color: #222;
   font-size: 8rem;
@@ -968,7 +969,7 @@
   left: 2rem;
   opacity: 0;
   transition: left ease-out 0.9s 0.7s, opacity ease-out 0.5s 0.7s;
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
 }
 #fp-nav ul li {
   position: relative;
