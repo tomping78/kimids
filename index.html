@@ -84,6 +84,7 @@
       media="all"
       data-minify="1"
     />
+    <link rel="stylesheet" type="text/css" href="css/particle.css" />
     <script
       type="text/javascript"
       src="js/jquery.min.js?ver=3.6.4"
@@ -498,6 +499,12 @@
                       </div>
                     </div>
                   </div>
+                  <div class="animation-wrapper">
+                    <div class="particle particle-1"></div>
+                    <div class="particle particle-2"></div>
+                    <div class="particle particle-3"></div>
+                    <div class="particle particle-4"></div>
+                  </div>
                 </div>
                 <div class="main-slider-item swiper-slide">
                   <rs-module-wrap
@@ -523,7 +530,7 @@
                           data-anim="r:0;"
                           data-in="o:0;e:power4.out;"
                           data-out="e:power4.out;"
-                          data-rsparticles='{"enable":true,"hideOnMobile":false,"particles":{"size":10,"sizeMin":0.5},"styles":{"lines":{"enable":true,"color":"#ffffff","opacity":20,"distance":200},"particle":{"color":"#ffffff","opacity":15,"opacityMin":25}},"movement":{"speed":3,"straight":false},"interactivity":{"hoverMode":"bubble"},"bubble":{"size":20,"opacity":30},"pulse":{"size":{"min":0.5}}}'
+                          data-rsparticles='{"enable":true,"hideOnMobile":false,"particles":{"size":10,"sizeMin":0.5},"styles":{"lines":{"enable":true,"color":"#ffffff","opacity":15,"distance":200},"particle":{"color":"#ffffff","opacity":10,"opacityMin":25}},"movement":{"speed":2,"straight":false},"interactivity":{"hoverMode":"bubble"},"bubble":{"size":15,"opacity":30},"pulse":{"size":{"min":0.5}}}'
                         >
                           <img
                             src="images/common/dummy.png"
@@ -600,13 +607,34 @@
                 </div>
                 <div class="main-slider-item swiper-slide">
                   <div class="media-wrapper slide-inner main-visual-item-inner">
-                    <div
-                      class="main-visual-img-con"
-                      style="
-                        background: #fff url(images/main/main_visual_04.png)
-                          no-repeat 50% 50%;
-                      "
-                    ></div>
+                    <div class="main-visual-img-con">
+                      <div
+                        class="main-visual-img-con glitch"
+                        style="
+                          background: #fff url(images/main/main_visual_04.png)
+                            no-repeat 50% 50%;
+                          background-size: cover !important;
+                        "
+                      ></div>
+                      <div
+                        class="main-visual-img-con glitch"
+                        style="
+                          background: #fff
+                            url(images/main/main_visual_04-02.png) no-repeat 50%
+                            50%;
+                          background-size: cover !important;
+                        "
+                      ></div>
+                      <div
+                        class="main-visual-img-con glitch"
+                        style="
+                          background: #fff
+                            url(images/main/main_visual_04-03.png) no-repeat 50%
+                            50%;
+                          background-size: cover !important;
+                        "
+                      ></div>
+                    </div>
                     <div class="main-visual-txt-con">
                       <div class="main-visual-txt-box area-1400">
                         <div class="main-visual-txt-inner">
