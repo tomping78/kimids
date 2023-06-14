@@ -770,7 +770,7 @@ td {
   padding: 12rem 0;
 }
 #content.wide {
-  padding: 12rem 0 0 0;
+  padding: 12rem 0 10rem 0;
 }
 
 /*  SUB LAYOUT :: 상단정보 (공통) */
@@ -787,7 +787,7 @@ td {
 }
 #contentInfoCon .content-sub-tit {
   opacity: 0.3;
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 25px;
   font-size: 1.6rem;
   letter-spacing: 0;

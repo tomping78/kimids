@@ -14,7 +14,7 @@ $(document).ready(function () {
   /* Scrollbar object  */
   $(".custom-scrollbar-wrapper").each(function () {
     if ($("html").attr("lang") == "ko") {
-      var dragTxt = "醫뚯슦濡� �쒕옒洹� �댁＜�몄슂.";
+      var dragTxt = "왼쪽이나 오른쪽으로 드래그 하세요.";
     } else {
       var dragTxt = "Drag left and right.";
     }
