@@ -149,238 +149,170 @@
 /* ----------------------- Greeting  ------------------------ */
 @media all and (max-width: 800px) {
   .greeting-title {
-    font-size: 20px;
-    line-height: 32px;
     padding: 20px 0;
-    margin-bottom: 30px;
     background: none;
   }
   .greeting-txt {
     flex-wrap: wrap;
     justify-content: end;
-    font-size: 16px;
-    line-height: 24px;
   }
   .greeting-txt div img {
     width: 60%;
   }
 }
+@media all and (max-width: 480px) {
+  .greeting-txt div img {
+    width: 50%;
+  }
+}
+/* ----------------------- Vision  ------------------------ */
 
-/* ----------------------- 기업개요  ------------------------ */
-@media all and (max-width: 1024px) {
-  /* summary :: mission / vision */
-  /* .summary-top-con{background-size:cover; padding:10px 0;} */
-  .summary-top-con .sub-txt {
-    font-size: 50px;
-    margin: 20px 0;
+@media all and (max-width: 1200px) {
+  .vision-box {
+    background-size: contain;
   }
-  .summary-top-con .top-txt-box {
-    position: absolute;
-    max-width: none;
-    padding-right: 0;
-    padding-bottom: 20px;
-    width: calc(100% - 30px);
+  .vision-stitle-box {
+    gap: 10px;
   }
-  .summary-top-con .txt {
-    padding-bottom: 0px;
-  }
-  .summary-top-con.top-left .txt {
+  .vision-stitle {
+    flex: 1 1 auto;
+    width: 100%;
+    height: auto;
+    background-position: 50% 50px !important;
+    border-radius: 0;
     text-align: left;
+    justify-content: left;
+    box-sizing: border-box;
+    padding: 180px 30px 30px 30px;
   }
-  .summary-top-box > .area {
-    bottom: -40px;
+  .vision-stitle:nth-child(2) {
+    margin: 0;
   }
-  .summary-top-con {
-    padding-top: 35%;
-    background-size: cover;
-  }
-  .summary-top-con.top-right {
-    background-position: calc(100% + 40px) bottom;
-  }
-  .top-txt-box .txt {
-    padding: 0px !important;
+
+  .vision-stitle h5 {
+    padding: 0 0 15px 0;
   }
 }
-
 @media all and (max-width: 800px) {
-  .summary-page .tit,
-  .summary-value .value-inner ul li .txt {
-    font-size: 18px;
-  }
-  .summary-page .sub-txt {
-    font-size: 31px;
-  }
-  .summary-top-con.top-right .txt {
-    font-size: 17px;
-  }
-  .summary-top-con.top-left .txt,
-  .summary-value .value-inner ul li:before,
-  .ci-table-box .ci-txt-box .txt {
-    font-size: 14px;
-  }
-  .ci-table-box .ci-tit-box strong {
-    font-size: 20px;
-  }
-  .bottom-table-box .botton-inner-table tr th,
-  .bottom-table-box .botton-inner-table tr td {
-    font-size: 13px;
+  .vision-title {
+    width: 75%;
+    padding: 35px;
+    box-sizing: border-box;
   }
 
-  .summary-table:before {
-    display: none;
+  .vision-stitle-box {
+    margin-top: 180px;
+    flex-direction: column;
   }
-  .summary-con {
-    margin-bottom: 50px;
-  }
-  .summary-page .tit {
-    margin-bottom: 10px;
-  }
-  .summary-top-con .sub-txt {
-    margin: 10px 0;
-  }
-
-  /* summary :: mission / vision */
-  .summary-top-con.top-right .txt {
-    line-height: 1.5em;
-  }
-  .summary-top-box > .area {
-    bottom: -25px;
-  }
-  /* summary :: value */
-  .summary-value {
-    padding-top: 2rem;
-  }
-  .summary-value .value-inner {
-    margin-top: 30px;
-  }
-  .summary-value .value-inner ul li {
-    float: none;
-    width: 100%;
-    padding: 30px 0;
-    border-right: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  .summary-value .value-inner ul li:before {
-    width: 30px;
-    height: 30px;
-    top: auto;
-    bottom: 0;
-    right: 50%;
-    line-height: 30px;
-    -webkit-transform: translate(50%, 50%) rotate(90deg);
-    transform: translate(50%, 50%) rotate(90deg);
-  }
-
-  .summary-value .value-inner ul li .txt {
-    margin-top: 15px;
-  }
-  /* summary :: ci */
-  .ci-logo-box {
-    padding: 40px;
-  }
-  .ci-table-box {
-    display: block;
-    margin-top: 20px;
-  }
-  .ci-table-box .ci-tit-box {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .ci-table-box .ci-txt-box {
-    display: block;
-    width: 100%;
-  }
-  .ci-table-box .ci-txt-box .ci-color {
-    margin-bottom: 10px;
-  }
-  /* summary :: table */
-  .summary-table {
-    padding: 25px 0;
-  }
-  .summary-bottom-table {
-    display: block;
-  }
-  .bottom-img-box {
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .bottom-img-box span img {
-    margin: auto;
-    max-width: 290px;
-  }
-  .bottom-table-box {
-    display: block;
-    width: 100%;
-    padding-left: 0;
+  .vision-stitle {
+    padding: 30px 30px 30px 22%;
+    background-position: 7% 50% !important;
+    background-size: 10% !important;
   }
 }
-@media all and (max-width: 640px) {
-  .summary-top-con {
-    padding-top: 250px;
-    background-position: right center;
-    background-size: cover;
+@media all and (max-width: 580px) {
+  .vision-title {
+    width: 75%;
+    padding: 25px;
+    gap: 10px;
   }
-  .bottom-table-box .botton-inner-table tr th,
-  .bottom-table-box .botton-inner-table tr td {
-    display: block;
-    width: 100%;
-    padding: 10px 0;
+
+  .vision-stitle h5 {
+    padding: 0 0 10px 0;
+  }
+  .vision-stitle {
+    background-size: 12% !important;
+    line-height: 22px;
+    padding: 20px 20px 20px 25%;
   }
 }
 @media all and (max-width: 480px) {
-  .summary-top-box > .area {
-    bottom: -20px;
+  .vision-title {
+    width: 100%;
+    padding: 25px;
+  }
+  .vision-stitle-box {
+    margin-top: 25%;
+  }
+  .vision-stitle {
+    background: rgba(0, 124, 198, 0.7);
+    padding: 20px;
+  }
+  .vision-stitle:nth-child(2) {
+    background: rgba(56, 0, 166, 0.7);
+  }
+  .vision-stitle:nth-child(3) {
+    background: rgba(225, 6, 52, 0.7);
+  }
+}
+/* ----------------------- Organization  ------------------------ */
+@media all and (max-width: 800px) {
+  .organ-box {
+    background: none;
+  }
+  .organ-level1 {
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    left: 0;
+    background: #02316a;
+    margin-bottom: 10px;
+    padding: 30px 0;
+  }
+  .organ-level2 {
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    border-radius: 0;
+    left: 0;
+    margin-bottom: 10px;
+    padding: 30px 0;
+  }
+  .organ-level3 {
+    top: 0;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .organ-level3 > div {
+    width: 50%;
+    height: auto;
+    border-radius: 0;
+    padding: 25px 0;
+  }
+  .organ-level4 {
+    margin-top: 0;
+  }
+  .organ-level4 > div {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 0;
+    padding: 25px 0;
+  }
+  .organ-level4 li {
+    padding: 110px 10px 30px;
+    background-position: 50% 30px !important;
+    background-size: 35% !important;
+  }
+}
+@media all and (max-width: 480px) {
+  .organ-level3 {
+    flex-wrap: wrap;
+  }
+  .organ-level3 > div {
+    width: 100%;
+  }
+  .organ-level4 ul {
+    flex-direction: column;
+  }
+  .organ-level4 li {
+    padding: 25px 20px 25px 30%;
+    background-position: 10% 50% !important;
+    background-size: 10% !important;
+    text-align: left;
   }
 }
 
-/* ----------------------- 사업분야  ------------------------ */
-@media all and (min-width: 1921px) {
-  .field-sub-sec .bg {
-    background-size: cover !important;
-  }
-}
-@media all and (min-width: 1221px) and (max-height: 770px) {
-  .field-sub-sec .bg {
-    background-size: cover !important;
-  }
-}
-@media all and (max-width: 1660px) {
-  .field-sub-sec .scroll-con {
-    left: 30px;
-  }
-  .field-sub-sec .bt-txt {
-    right: 30px;
-  }
-}
-@media all and (max-width: 1460px) {
-  /* 컨텐츠03 */
-  #fieldContent3 .bg {
-    background: url(/images/content/field_con_bg_03.jpg) no-repeat 90% 50%;
-  }
-  #fieldContent3.field-sub-sec .field-dot .dot-item.item-02 {
-    padding-left: 3.6rem;
-    right: 1040px !important;
-  }
-  #fieldContent3.field-sub-sec .field-dot .dot-item.item-02 em {
-    top: 10px;
-    left: 0;
-    position: absolute;
-    margin: 0;
-  }
-  /* 컨텐츠04 */
-  #fieldContent4 .bg {
-    background: url(/images/content/field_con_bg_04.jpg) no-repeat 80% 50%;
-  }
-  #fieldContent4.field-sub-sec .field-dot .dot-item.item-02 {
-    right: 900px !important;
-  }
-  /* 컨텐츠06 */
-  #fieldContent6.field-sub-sec .field-dot .dot-item.item-01 {
-    right: 1000px !important;
-  }
-}
 @media all and (max-width: 1220px) {
   /* 공통레이아웃 :: 기본Parallax */
   .parallax-container:not(.parallax-fixed-container) {
@@ -645,8 +577,11 @@
   .energy-page .sub-drop-menu-style ul li {
     border-top: 1px solid #ddd;
   }
+  .case-con-list li {
+    height: 120px;
+  }
 }
-/* ----------------------- 브랜드 소개  ------------------------ */
+
 @media all and (max-width: 1430px) {
   .intro-top-box .tit-box .tit .quotes-up {
     left: -10px;
@@ -667,44 +602,21 @@
   .intro-top-box .tit-box .tit .quotes-down {
     bottom: 30px;
   }
-  .intro-top-box .txt-box .txt {
-    font-size: 14px;
-    line-height: 1.5em;
-  }
+
   .Evaluation-con-list {
     display: block;
   }
   .Evaluation-con-list li {
     margin-bottom: 3rem;
   }
+}
 
-  /* 특허 및 인증서 */
-  .certifi-sec-wrap:first-child {
-    margin-bottom: 15rem;
-  }
-  .certifi-list-style05 .certificate-list > ul {
-    margin-top: 5rem;
-  }
-  .certifi-list-style05 .certificate-list > ul li {
-    width: 31.333%;
-  }
-  .certifi-list-style05 .certificate-list .certificate-info .cate {
-    margin-top: 3rem;
-  }
-}
-@media all and (max-width: 480px) {
-  /* 특허 및 인증서 */
-  .certifi-list-style05 .certificate-list > ul li {
-    width: 48%;
-  }
-}
 @media all and (max-width: 1200px) {
   .roy-box-wrap {
     padding: 7rem 5rem;
   }
 }
 
-/* ----------------------- 제품 소개  ------------------------ */
 @media all and (max-width: 1024px) {
   /* 리스트 */
   .prd-list-con li {
@@ -774,85 +686,6 @@
 @media all and (max-width: 480px) {
   /* 검색바 */
   .bbs-top-list-box .board-search-box.style-02 {
-    width: 100%;
-  }
-}
-
-/* ----------------------- 설치현황  ------------------------ */
-@media all and (max-width: 800px) {
-  .partner-con {
-    margin-top: 50px;
-  }
-  .partner-con .tit-box .tit {
-    font-size: 24px;
-  }
-  .partner-list-wrap li {
-    width: 33.33%;
-  }
-}
-@media all and (max-width: 480px) {
-  .partner-list-wrap li {
-    width: 50%;
-  }
-}
-
-/* ******************  Solution ********************** */
-/* ----------------------- 솔루션  ------------------------ */
-@media all and (max-width: 800px) {
-  .brand-img-area {
-    padding: 0 15px;
-  }
-  .solution-list-table dt {
-    width: 70px;
-  }
-  .solution-list-table dt span img {
-    width: 59.5px;
-  }
-  .solution-list-table dd {
-    width: calc(100% - 70px);
-    padding-left: 10px;
-  }
-
-  .solution-sec {
-    margin-bottom: 7rem;
-  }
-  .solution-cm-tit .solution-txt {
-    margin: 3rem 0 2rem;
-    font-size: 17px;
-  }
-
-  .solution-list-table {
-    padding: 25px 0;
-  }
-
-  .composition-list-wrap li {
-    width: calc(33.33% - 22px);
-    margin-bottom: 20px;
-  }
-  .composition-list-wrap li .txt {
-    min-height: 40px;
-    margin-top: 5px;
-  }
-  .composition-list-wrap li .list-img span {
-    padding-top: 180px;
-  }
-  .composition-list-wrap li.list-02 {
-    width: 50%;
-  }
-}
-@media all and (max-width: 640px) {
-  .exam-visual-control {
-    bottom: 20px;
-  }
-}
-@media all and (max-width: 480px) {
-  .composition-list-wrap li {
-    width: calc(50% - 22px);
-  }
-  .composition-list-wrap li .list-img span {
-    padding-top: 150px;
-  }
-  .composition-list-wrap li.list-02 {
     width: 100%;
   }
 }

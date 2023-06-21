@@ -784,13 +784,13 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 65rem;
-  margin-top: 7.5rem;
+  margin-top: 7rem;
 }
 .main-cp-wrap .main-cp-txt .cp-link-list li {
   width: 40%;
   display: table;
   table-layout: fixed;
-  height: 7.5rem;
+  height: 7rem;
   position: relative;
   border-bottom: 1px solid #eee;
   margin-right: 10%;

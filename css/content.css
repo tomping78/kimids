@@ -116,17 +116,17 @@
 /* ******************  COMPANY ********************** */
 /* ---------------------- Greeting -----------------------*/
 .greeting-img {
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 .greeting-img img {
   width: 100%;
 }
 .greeting-title {
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 3rem;
+  line-height: 4.2rem;
   color: #111;
   padding: 35px 100px;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
   background: url(../images/content/greeting02-01.png) no-repeat 0 0,
     url(../images/content/greeting02-02.png) no-repeat 100% 100%;
 }
@@ -134,12 +134,12 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 1.8rem;
+  line-height: 3rem;
   gap: 50px;
 }
 .greeting-txt span {
-  flex: 2 2 80%;
+  flex: 2 2 75%;
 }
 .greeting-txt div {
   flex: 0 1 auto;
@@ -149,316 +149,187 @@
 .greeting-txt div img {
   width: 100%;
 }
-/* ----------------------- CEO  ------------------------ */
-
-.ceo-top-bg .tit {
-  font-size: 50px;
-  line-height: 1.5em;
-  letter-spacing: -0.75px;
+/* ----------------------- Vision  ------------------------ */
+.vision-box {
+  width: 100%;
+  position: relative;
+  background: url(../images/content/vision01.png) no-repeat 50% 70px;
+}
+.vision-title {
+  width: 50%;
+  border-radius: 100px;
+  overflow: hidden;
   color: #fff;
-  font-weight: 600;
-  margin-top: 24px;
-}
-.ceo-txt-box {
-  margin-top: 82px;
-}
-.ceo-txt-box strong {
-  font-size: 22px;
-  line-height: 1.63em;
-  letter-spacing: -0.35px;
-  color: #222;
-  font-weight: 600;
-}
-.ceo-txt-box .txt {
-  /*font-size:17px; */
-  font-size: 22px;
-  line-height: 1.94em;
-  letter-spacing: -1.2px;
-  color: #666;
-  margin-top: 32px;
-}
-.ceo-sign {
-  margin-top: 32px;
-}
-.ceo-sign .txt {
-  display: inline-block;
-  margin-right: 20px;
-  margin-top: 0 !important;
-  vertical-align: middle;
-}
-.ceo-sign .sign {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-/* ----------------------- 기업개요  ------------------------ */
-.summary-con {
-  margin-bottom: 160px;
-}
-.summary-page .tit {
-  font-size: 26px;
-  letter-spacing: -0.25px;
-  color: #1dc1dd;
-  font-weight: bold;
+  font-size: 4rem;
   text-align: center;
-  margin-bottom: 35px;
+  padding: 50px;
+  background: #02316a;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
-.summary-page .sub-txt {
-  font-size: 60.2px;
-  line-height: 1.32em;
-  letter-spacing: -0.75px;
-  color: #222;
-  font-weight: bold;
-}
-
-/* summary :: mission / vision */
-.summary-top-con {
-  background: no-repeat; /* background-size:contain; */
-  margin-bottom: 13.75%;
-}
-.summary-top-con .tit {
-  text-align: left;
-}
-.summary-top-con .sub-txt {
-  display: block;
-  margin: 25px 0 25%;
-}
-.summary-top-con > .area {
-  position: relative;
-}
-.summary-top-con .top-txt-box {
-  max-width: 1280px;
-  margin: auto;
+.vision-title span {
   width: 100%;
+  font-size: 1.8rem;
 }
-.summary-top-con .txt {
-  padding-bottom: 70px;
+.vision-stitle-box {
+  display: flex;
+  flex-direction: row;
+  margin-top: 280px;
 }
-/* top :: right */
-.summary-top-con.top-right {
-  background-position: bottom right;
-  background-image: url("/images/content/summary_top_img01.jpg");
-}
-.summary-top-con.top-right .txt {
-  font-size: 24px;
-  letter-spacing: 1px;
+.vision-stitle {
+  flex: 1 1 auto;
+  width: 480px;
+  height: 480px;
+  background: rgba(0, 124, 198, 0.7) url(../images/content/vision02-01.png)
+    no-repeat 50% 145px;
+  font-size: 1.6rem;
+  line-height: 25px;
   color: #fff;
-  font-weight: 500;
-  line-height: 65px;
-}
-.summary-top-con.top-right .top-txt-box .txt {
-  padding-left: 160px;
-}
-/* top :: left */
-.summary-top-con.top-left {
-  background-position: bottom left;
-  background-image: url("/images/content/summary_top_img02.jpg");
-}
-.summary-top-con.top-left .txt {
-  font-size: 18px;
-  line-height: 1.83em;
-  letter-spacing: -0.75px;
-  color: #f7ecec;
-  opacity: 0.8;
-  text-align: right;
-}
-.summary-top-con.top-left .top-txt-box .txt {
-  padding-right: 160px;
-}
-
-.summary-top-box .tit {
-  text-align: left;
-}
-.summary-top-box > .area {
-  position: relative;
-  bottom: -45px;
-  z-index: 1;
-}
-.summary-top-con {
-  position: relative;
-  padding-top: 500px;
-}
-.top-txt-box {
-  position: absolute;
-  bottom: 0;
-  padding-right: 15px;
-}
-
-/* summary :: value */
-.summary-value {
+  border-radius: 100%;
   text-align: center;
-}
-.summary-value .value-inner {
-  background: no-repeat center;
-  background-size: cover;
-  background-image: url("/images/content/summary_value_bg.jpg");
-  margin-top: 70px;
-}
-.summary-value .value-inner ul li {
-  position: relative;
-  float: left;
-  width: 20%;
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  justify-content: space-around;
   box-sizing: border-box;
-  padding: 15.65% 0 14.67%;
+  padding-top: 85px;
 }
-.summary-value .value-inner ul li:before {
-  position: absolute;
-  content: "\e93e";
-  font-family: "xeicon";
-  font-size: 18px;
-  line-height: 50px;
-  color: #fff;
-  width: 50px;
-  height: 50px;
-  right: 0;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(50%, -50%);
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+.vision-stitle:nth-child(2) {
+  background: rgba(56, 0, 166, 0.7) url(../images/content/vision02-02.png)
+    no-repeat 50% 145px;
+  margin: 0 -80px;
 }
-.summary-value .value-inner ul li:last-child {
-  border: none;
+.vision-stitle:nth-child(3) {
+  background: rgba(225, 6, 52, 0.7) url(../images/content/vision02-03.png)
+    no-repeat 50% 145px;
 }
-.summary-value .value-inner ul li:last-child:before {
-  display: none;
-}
-.summary-value .value-inner ul li .txt {
-  font-size: 26px;
-  line-height: 1.26em;
-  letter-spacing: -0.75px;
-  color: #fff;
-  margin-top: 40px;
+.vision-stitle h5 {
+  font-size: 2rem;
+  padding-bottom: 170px;
 }
 
-/* summary :: ci */
-.ci-logo-box {
-  border: 1px solid #e4e4e4;
-  padding: 72px;
+/* ----------------------- Organization  ------------------------ */
+
+.organ-box {
+  background: url(../images/content/organ-line.png) no-repeat 50% 180px;
 }
-.ci-logo-box span {
-  display: block;
-  max-width: 370px;
-  margin: auto;
-}
-.ci-logo-box span img {
-  width: 100%;
-}
-.ci-table-box {
-  display: table;
-  width: 100%;
-  margin-top: 60px;
-}
-.ci-table-box .ci-tit-box {
-  display: table-cell;
-  width: 33.83%;
-  vertical-align: top;
-}
-.ci-table-box .ci-tit-box strong {
-  font-size: 30px;
-  line-height: 1.5em;
-  letter-spacing: -0.25px;
-  color: #222;
+.organ-level1 {
+  width: 270px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 3.5rem;
   font-weight: 600;
-}
-.ci-table-box .ci-txt-box {
-  display: table-cell;
-  width: 66.17%;
-}
-.ci-table-box .ci-txt-box .ci-color {
-  width: 100%;
-  height: 50px;
-  margin-bottom: 32px; /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0872ba+0,1dc1dd+100 */
-  background: rgb(8, 114, 186); /* Old browsers */
-  background: -moz-linear-gradient(
-    30deg,
-    rgba(8, 114, 186, 1) 0%,
-    rgba(29, 193, 221, 1) 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    30deg,
-    rgba(8, 114, 186, 1) 0%,
-    rgba(29, 193, 221, 1) 100%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    30deg,
-    rgba(8, 114, 186, 1) 0%,
-    rgba(29, 193, 221, 1) 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0872ba', endColorstr='#1dc1dd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
-.ci-table-box .ci-txt-box .txt {
-  font-size: 18px;
-  line-height: 1.83em;
-  letter-spacing: -0.75px;
-  color: #666;
-}
-
-/* summary :: table */
-.summary-table {
+  color: #fff;
   position: relative;
-  background: #f9f9f9;
-  padding: 97px 0;
-}
-.summary-table:before {
-  position: absolute;
-  content: "";
-  width: 33.33%;
-  height: 100%;
-  background: #ebf0f3;
-  top: 0;
-  left: 0;
-}
-.summary-bottom-table {
-  position: relative;
-  display: table;
-  width: 100%;
-}
-.bottom-img-box {
-  display: table-cell;
-  width: 37.5%;
-  vertical-align: middle;
-}
-.bottom-img-box span img {
-  display: block;
-  width: 100%;
-  max-width: 480px;
-}
-.bottom-table-box {
-  display: table-cell;
-  width: 62.5%;
-  padding-left: 12.5%;
+  left: calc(50% - 135px);
+  background: url(../images/content/organ-level1-bg.png) no-repeat 50% 50%;
   box-sizing: border-box;
-  vertical-align: middle;
+  margin-bottom: 75px;
 }
-.bottom-table-box .tit {
-  text-align: left;
+.organ-level1 span {
+  font-size: 1.8rem;
+  font-weight: normal;
 }
-.bottom-table-box .botton-inner-table {
-  width: 100%;
-  border-top: 1px solid #000;
+.organ-level2 {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #678bbd;
+  border-radius: 100%;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  left: calc(50% - 125px);
+  background: #83a6d8;
+  box-sizing: border-box;
 }
-.bottom-table-box .botton-inner-table tr {
-  border-bottom: 1px solid #e0e0e0;
+.organ-level2 span {
+  font-size: 1.8rem;
+  font-weight: normal;
 }
-.bottom-table-box .botton-inner-table tr th,
-.bottom-table-box .botton-inner-table tr td {
-  font-size: 16px;
-  letter-spacing: -0.75px;
-  color: #111;
-  text-align: left;
-  font-weight: 400;
-  padding: 24px 0;
+.organ-level3 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -200px;
 }
-
-@media all and (max-width: 1024px) {
-  .summary-top-con {
-    position: relative;
-    padding-top: 31.25%;
-    background-size: contain;
-  }
+.organ-level3 > div {
+  width: 30%;
+  height: 150px;
+  border: 1px solid #78a5a4;
+  border-radius: 100px;
+  overflow: hidden;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff;
+  background: #81cbca;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.organ-level3 span {
+  font-size: 2rem;
+  font-weight: normal;
+}
+.organ-level4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -75px;
+}
+.organ-level4 > div {
+  width: 50%;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 170px;
+  border: 1px solid #382e69;
+  border-radius: 100px;
+  overflow: hidden;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff;
+  background: #605594;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.organ-level4 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+.organ-level4 li {
+  flex: 1 1 25%;
+  background: #f5f4e1 url(../images/content/organ-img01.png) no-repeat 50% 55px;
+  text-align: center;
+  padding: 150px 20px 50px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  line-height: 2.5rem;
+  border: 1px solid #ebeadd;
+}
+.organ-level4 li:nth-child(2) {
+  flex: 1 1 25%;
+  background: #f5f4e1 url(../images/content/organ-img02.png) no-repeat 50% 55px;
+}
+.organ-level4 li:nth-child(3) {
+  flex: 1 1 25%;
+  background: #f5f4e1 url(../images/content/organ-img03.png) no-repeat 50% 55px;
+}
+.organ-level4 li:nth-child(4) {
+  flex: 1 1 25%;
+  background: #f5f4e1 url(../images/content/organ-img04.png) no-repeat 50% 55px;
 }
 
 /* ----------------------- 사업분야  ------------------------ */
@@ -960,9 +831,9 @@
   vertical-align: middle;
 }
 .intro-top-box .txt-box .txt {
-  font-size: 18px;
-  line-height: 1.83em;
-  letter-spacing: -1.3px;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.03em;
   color: #333;
 }
 .intro-top-box .img-box {
@@ -1089,18 +960,19 @@
   row-gap: 20px;
 }
 .roy-box-wrap .roy-name {
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 .roy-box-wrap .roy-title {
-  font-size: 35px;
+  font-size: 3.5rem;
+  line-height: 4.5rem;
   font-weight: 500;
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 .roy-box-wrap .roy-txt {
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 2rem;
+  line-height: 2.5rem;
 }
 
 /* 고객사례 */
@@ -1132,6 +1004,9 @@
 }
 .case-con-list li.samsung-sdi {
   background: url(../images/content/logo-samsung-sdi.png) no-repeat 50% 50%;
+}
+.case-con-list li.samsung-sds {
+  background: url(../images/content/logo-samsung-sds.png) no-repeat 50% 50%;
 }
 .case-con-list li.samsung-cnt {
   background: url(../images/content/logo-samsung-cnt.png) no-repeat 50% 50%;
@@ -1338,6 +1213,9 @@
 .case-con-list li.allied {
   background: url(../images/content/logo-allied.png) no-repeat 50% 50%;
 }
+.case-con-list li.sbc {
+  background: url(../images/content/logo-sbc.png) no-repeat 50% 50%;
+}
 .case-con-list li.welfare {
   background: url(../images/content/logo-welfare.png) no-repeat 50% 50%;
 }
@@ -1349,6 +1227,9 @@
 }
 .case-con-list li.tilon {
   background: url(../images/content/logo-tilon.png) no-repeat 50% 50%;
+}
+.case-con-list li.oracle {
+  background: url(../images/content/logo-oracle.png) no-repeat 50% 50%;
 }
 
 /* 아코디언 전체 레이아웃 */
@@ -1520,20 +1401,7 @@
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* .accordion-item .accordion-info-box:before{
-	position:absolute; 
-	bottom:0px; left:0px; 
-	width:0; height:190px; 
-	background-color:#000; 
-	background-color:rgba(0,0,0,0.5);
-	content:""; 
-	-webkit-transition:all 0.4s;
-	-moz-transition:all 0.4s;
-	-o-transition:all 0.4s;
-	-ms-transition:all 0.4s;
-	transition:all 0.4s; 
-	z-index:1;
-} */
+
 .accordion-item .accordion-info-box > dl {
   position: relative;
   z-index: 1;

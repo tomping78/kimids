@@ -277,7 +277,6 @@ textarea {
 
 /* *******************
  * description : common.css
- * date : 2021-06-14
 ******************* */
 .cm-fl {
   float: left;
@@ -565,7 +564,7 @@ a:hover .over-bg {
 .m-br {
   display: none;
 }
-@media all and (max-width: 1220px) {
+@media all and (max-width: 1200px) {
   .pc-br {
     display: none;
   }
@@ -576,7 +575,7 @@ a:hover .over-bg {
   }
 }
 
-/*  */
+/* text drag */
 div {
   -ms-user-select: none;
   -moz-user-select: -moz-none;

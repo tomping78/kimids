@@ -4,8 +4,15 @@
  * description : 전체 레이아웃 CSS
 ******************************************************** */
 
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Titillium+Web:wght@300;400;600;700&display=swap");
 /* ****************** LAYOUT ********************** */
+@font-face {
+  font-family: "NEXON Lv2 Gothic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 ::selection {
   background: #555;
   color: #fff;
@@ -25,10 +32,10 @@ button,
 select,
 input,
 textarea {
-  font-family: "Titillium Web", "Noto Sans KR", "나눔고딕", NanumGothic,
+  font-family: "Titillium Web", "NEXON Lv2 Gothic", "나눔고딕", NanumGothic,
     "Nanum Gothic", "돋움", Dotum, Arial, sans-serif;
   font-size: 13px;
-  color: #666;
+  color: #777;
   -webkit-text-size-adjust: none;
   word-break: keep-all;
 }
@@ -84,11 +91,11 @@ td {
 }
 
 .font-pretend {
-  font-family: "Titillium Web", "Noto Sans KR", "나눔고딕", NanumGothic,
-    "Nanum Gothic", "돋움", Dotum, Arial, sans-serif;
+  font-family: "Titillium Web", "나눔고딕", NanumGothic, "Nanum Gothic", "돋움",
+    Dotum, Arial, sans-serif;
 }
 .font-noto {
-  font-family: "Noto Sans KR", "나눔고딕", NanumGothic, "Nanum Gothic", "돋움",
+  font-family: "Titillium Web", "나눔고딕", NanumGothic, "Nanum Gothic", "돋움",
     Dotum, Arial, sans-serif;
 }
 
@@ -381,7 +388,7 @@ td {
 
 /* GNB :: 2차메뉴 Over (높이변경) */
 #gnb.open #gnbBg {
-  height: 570px;
+  height: 550px;
   opacity: 1;
   filter: Alpha(opacity=100);
 }
@@ -400,7 +407,7 @@ td {
   top: -140px;
   left: 0;
   width: 100%;
-  height: 570px;
+  height: 550px;
   background-color: #02316a;
   opacity: 0;
   z-index: -1;
@@ -659,7 +666,7 @@ td {
   font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 0.083em;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.7);
   padding-top: 35px;
 }
 
@@ -786,7 +793,7 @@ td {
   letter-spacing: -0.075rem;
 }
 #contentInfoCon .content-sub-tit {
-  opacity: 0.3;
+  opacity: 0.35;
   font-weight: 600;
   margin-top: 25px;
   font-size: 1.6rem;

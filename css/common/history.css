@@ -74,7 +74,7 @@
   z-index: 2;
 }
 .history_content .year {
-  font-size: 32px;
+  font-size: 3.2rem;
   line-height: 1;
   font-weight: 700;
   letter-spacing: -0.025em;
@@ -89,14 +89,13 @@
   letter-spacing: -0.025em;
 }
 .history_content .date {
-  font-size: 20px;
+  font-size: 1.6rem;
   font-weight: 700;
   color: var(--color-black);
 }
 .history_content .txt {
-  font-size: 16px;
+  font-size: 1.6rem;
   color: var(--color-text);
-  padding-top: 5px;
 }
 .history_content .txt .sub {
   font-size: 0.889em;
