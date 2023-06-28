@@ -10,7 +10,7 @@ var $window = $(window);
 // var $wrap = $("#wrap");
 // var $header = $("#header");
 // var hashURL = location.hash;
-// var scrollY = 0;
+var scrollY = 0;
 // var moSize = false;
 
 // $(function () {
@@ -18,9 +18,9 @@ var $window = $(window);
 //   sliders();
 // });
 
-// $window.on("scroll", () => {
-//   scrollY = $window.scrollTop();
-// });
+$window.on("scroll", () => {
+  scrollY = $window.scrollTop();
+});
 
 // breakpoint
 var matchMax = (num) => {

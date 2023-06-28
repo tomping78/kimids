@@ -709,7 +709,80 @@
 #fieldContent7 .bg {
   background: url(/images/content/field_con_bg_07.jpg) no-repeat 100% 50%;
 }
-
+/* ----------------------- Technical ------------------------- */
+.technical-title {
+  font-size: 2.6rem;
+  font-weight: 300;
+  line-height: 3.2rem;
+  color: #888;
+  padding: 35px 100px;
+  margin-bottom: 5rem;
+  background: url(../images/content/greeting02-01.png) no-repeat 0 0,
+    url(../images/content/greeting02-02.png) no-repeat 100% 100%;
+}
+.technical-title span {
+  font-size: 3.8rem;
+  font-weight: 600;
+  color: #111;
+  line-height: 4.8rem;
+  letter-spacing: 0.03em;
+  padding-top: 10px;
+  display: block;
+}
+.technical-form {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #e1e1e1;
+  background: #fafafa;
+}
+.technical-form > div {
+  flex: 1 1 50%;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.technical-form .img-area {
+  background: url(../images/content/technical01.png) no-repeat 0 50%;
+  background-size: cover;
+  text-indent: -55555px;
+}
+.technical-form .form-area li {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-bottom: 20px;
+}
+.technical-form .form-area li label {
+  display: flex;
+  font-size: 1.8rem;
+  color: #333;
+  padding-bottom: 10px;
+  align-items: center;
+  gap: 10px;
+}
+.technical-form .form-area li label span {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ec0505;
+  display: flex;
+  height: 13px;
+}
+.technical-form .form-area .btn-area {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.technical-form .form-area input[type="button"] {
+  background: #c2c2c2;
+  font-size: 1.8rem;
+  color: #fff;
+  border: none;
+  flex: 1 1 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+.technical-form .form-area input[type="button"].active {
+  background: #02316a;
+}
 /* ----------------------- 사업장소개  ------------------------ */
 .location-wrap {
   position: relative;
@@ -817,7 +890,7 @@
 .intro-top-box .tit-box .tit {
   display: inline-block;
   position: relative;
-  font-size: 26px;
+  font-size: 2.5rem;
   line-height: 1.4em;
   letter-spacing: -0.75px;
   color: #111;
@@ -903,7 +976,7 @@
   border: 1px solid #e1e1e1;
 }
 .mom-box-wrap .mom-box .mom-title {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
   color: #125aac;
 }
@@ -911,13 +984,13 @@
   margin: 2.5rem 0 5rem;
 }
 .mom-box-wrap .mom-box .mom-subject {
-  font-size: 38px;
+  font-size: 3.5rem;
   font-weight: 700;
   color: #111;
   margin-bottom: 2rem;
 }
 .mom-txt {
-  font-size: 15px;
+  font-size: 1.8rem;
   line-height: 20px;
   color: #888;
 }
@@ -934,10 +1007,10 @@
 }
 .Evaluation-con-list li strong {
   display: block;
-  font-size: 22px;
+  font-size: 2.5rem;
   letter-spacing: -0.25px;
   color: #111;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 .Evaluation-con-list li img {

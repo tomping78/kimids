@@ -783,9 +783,18 @@ td {
 /*  SUB LAYOUT :: 상단정보 (공통) */
 #contentInfoCon {
   position: relative;
-  margin: 0 auto 100px;
+  margin: 0 auto 150px;
   text-align: center;
   color: #333;
+}
+#contentInfoCon::after {
+  content: "";
+  width: 1px;
+  height: 70px;
+  position: absolute;
+  top: 110px;
+  left: calc(50% - 1px);
+  background: #02316a;
 }
 #contentInfoCon .content-tit {
   font-size: 4rem;

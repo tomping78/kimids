@@ -525,6 +525,29 @@
     margin-bottom: 3%;
   }
 }
+/* ----------------------- Technical -------------------------- */
+@media all and (max-width: 800px) {
+  .technical-title {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    padding: 20px 10px;
+    margin-bottom: rem;
+    background: none;
+  }
+  .technical-title span {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  .technical-form .img-area {
+    display: none;
+  }
+  .technical-form {
+    display: block;
+  }
+  .technical-form > div {
+    padding: 20px;
+  }
+}
 /* ----------------------- 사업장소개  ------------------------ */
 @media all and (max-width: 1024px) {
   .location-info-wrap .info-txt dl dt {

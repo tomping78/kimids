@@ -245,6 +245,10 @@ textarea {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: 1px solid #e1e1e1;
+  font-size: 1.6rem !important;
+  color: #777;
+  padding: 8px 10px;
 }
 input::-ms-clear,
 select::-ms-expand {

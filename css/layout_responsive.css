@@ -704,6 +704,11 @@
   #contentInfoCon {
     margin-bottom: 50px;
   }
+  @media all and (max-width: 800px) {
+    #contentInfoCon::after {
+      display: none;
+    }
+  }
   #contentInfoCon .content-tit {
     font-size: 24px;
   }
