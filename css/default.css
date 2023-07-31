@@ -217,6 +217,11 @@ a:hover,
 a:focus {
   text-decoration: none;
 }
+a.link-underline {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  color: #f07000;
+}
 button {
   margin: 0px;
   padding: 0px;
@@ -527,6 +532,19 @@ a:hover .over-bg {
 }
 .width100 {
   width: 100% !important;
+}
+
+.mB1rem {
+  margin-bottom: 1rem;
+}
+.mB2rem {
+  margin-bottom: 2rem;
+}
+.mB3rem {
+  margin-bottom: 3rem;
+}
+.mB5rem {
+  margin-bottom: 5rem;
 }
 
 /* 191016 kakao 지도 이슈로 border, padding초기화 */

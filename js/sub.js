@@ -579,3 +579,18 @@ $(document).ready(function () {
 });
 
 customScrollY(".cm-scroll-con");
+
+$(function () {
+  $(".table_scroll").each(function () {
+    $(this).scroll(function () {
+      var tableScrollLeft = $(this).scrollLeft();
+      if (tableScrollLeft > 0) {
+        $(this).addClass("table_scroll_acitve");
+      } else {
+        $(this).removeClass("table_scroll_acitve");
+      }
+
+      //console.log(tableScrollLeft)
+    });
+  });
+});

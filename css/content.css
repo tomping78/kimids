@@ -783,7 +783,60 @@
 .technical-form .form-area input[type="button"].active {
   background: #02316a;
 }
-/* ----------------------- 사업장소개  ------------------------ */
+/* ----------------------- contact us  ------------------------ */
+.contact-wrap {
+  position: relative;
+}
+.contact-wrap .small-title {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #02316a;
+  padding: 10px 0;
+}
+.contact-wrap .table-box {
+  margin-bottom: 5rem;
+}
+.contact-wrap .table-box table {
+  width: 100%;
+  border-top: 2px solid #333;
+}
+.contact-wrap .table-box table th {
+  font-size: 2rem;
+  color: #111;
+  padding: 2rem;
+  text-align: center;
+  background: #f1f1f1;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.contact-wrap .table-box table thead th {
+  color: #fff;
+  padding: 2.3rem 2rem;
+  background: #02316a;
+  border-right: 1px solid #111;
+}
+.contact-wrap .table-box table th:last-child {
+  border-right: none;
+}
+.contact-wrap .table-box table td {
+  font-size: 2rem;
+  color: #777;
+  line-height: 2.8rem;
+  padding: 2rem 2.3rem;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.contact-wrap .table-box table td:last-child {
+  border-right: none;
+}
+.contact-wrap .table-box span {
+  display: block;
+  padding-top: 10px;
+  text-align: right;
+  font-size: 1.6rem;
+}
+
 .location-wrap {
   position: relative;
 }
@@ -810,7 +863,7 @@
   right: 0;
   z-index: 9;
   width: 40%;
-  background: #083250;
+  background: #02316a;
   border-radius: 15px;
   padding: 2.37% 3.12%;
   box-sizing: border-box;
@@ -895,25 +948,69 @@
   letter-spacing: -0.75px;
   color: #111;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 3rem;
 }
 
 .intro-top-box .txt-box {
-  display: table-cell;
-  width: 62.5%;
+  /* display: table-cell;
+  width: 62.5%; */
   vertical-align: middle;
 }
 .intro-top-box .txt-box .txt {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 2.8rem;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
   color: #333;
+}
+.intro-top-box .txt-box .txt span {
+  color: #125aac;
+  font-weight: 700;
+}
+.intro-top-box .txt-box.blue-box {
+  border: 2px solid #125acc;
+  padding: 3rem 2rem;
+  background: #f8fbfd;
+}
+.intro-top-box .txt-box .txt.information {
+  padding-left: 120px;
+  background: url(../images/content/icon_information.png) no-repeat 20px 50%;
+}
+.intro-top-box .list-box {
+  font-size: 1.8rem;
+  line-height: 3.4rem;
+  margin: 3rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.intro-top-box .list-box li {
+  position: relative;
+  padding-left: 20px;
+  box-sizing: border-box;
+  flex: 1 0 50%;
+  min-width: 500px;
+}
+.intro-top-box .list-box li::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #f07000;
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 3px;
 }
 .intro-top-box .img-box {
   width: 100%;
   border: 1px solid #e1e1e1;
   box-sizing: border-box;
-  margin-bottom: 10px;
+  margin-bottom: 3rem;
+}
+.intro-top-box .img-box.bd-none {
+  border: none;
+}
+.intro-top-box .img-box.round {
+  border-bottom-left-radius: 3.5rem;
+  border-top-right-radius: 8rem;
+  overflow: hidden;
 }
 .intro-top-box .img-box img {
   width: 100%;
@@ -971,7 +1068,7 @@
   flex: 1 1 40%;
   min-width: 300px;
   text-align: center;
-  padding: 5rem 2rem;
+  padding: 4.5rem;
   box-sizing: border-box;
   border: 1px solid #e1e1e1;
 }
@@ -981,18 +1078,53 @@
   color: #125aac;
 }
 .mom-box-wrap .mom-box img {
-  margin: 2.5rem 0 5rem;
+  width: 80px;
+  margin: 2rem 0 3.5rem;
 }
 .mom-box-wrap .mom-box .mom-subject {
-  font-size: 3.5rem;
+  font-size: 2.4rem;
   font-weight: 700;
   color: #111;
   margin-bottom: 2rem;
 }
 .mom-txt {
-  font-size: 1.8rem;
-  line-height: 20px;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
   color: #888;
+}
+
+.mom-box-wrap.column .mom-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+  text-align: left;
+  position: relative;
+  gap: 5rem;
+}
+.mom-box-wrap.column .mom-box:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.mom-box-wrap.column .mom-box > div {
+  flex: 1 1 60%;
+}
+.mom-box-wrap.column .mom-box > img {
+  flex: 1 1 30%;
+  margin: 0;
+  width: auto;
+  min-width: 280px;
+}
+.mom-box-wrap.column .mom-box .mom-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #125aac;
+}
+.mom-box-wrap.column .mom-box .mom-subject {
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+.mom-box-wrap.alignLeft .mom-box {
+  text-align: left;
 }
 
 /* 시장평가 */
@@ -1047,6 +1179,13 @@
   font-size: 2rem;
   line-height: 2.5rem;
 }
+.market-txt {
+  font-size: 1.8rem;
+}
+.market-txt span {
+  font-weight: 700;
+  color: #111;
+}
 
 /* 고객사례 */
 .case-con-list {
@@ -1084,6 +1223,9 @@
 .case-con-list li.samsung-cnt {
   background: url(../images/content/logo-samsung-cnt.png) no-repeat 50% 50%;
 }
+.case-con-list li.samsung-card {
+  background: url(../images/content/logo-samsung-card.png) no-repeat 50% 50%;
+}
 .case-con-list li.shinhan-bank {
   background: url(../images/content/logo-shinhan-bank.png) no-repeat 50% 50%;
 }
@@ -1092,6 +1234,13 @@
 }
 .case-con-list li.hyundai-capital {
   background: url(../images/content/logo-hyundai-capital.png) no-repeat 50% 50%;
+}
+.case-con-list li.hyundai-commercial {
+  background: url(../images/content/logo-hyundai-commercial.png) no-repeat 50%
+    50%;
+}
+.case-con-list li.hyundai-card {
+  background: url(../images/content/logo-hyundai-card.png) no-repeat 50% 50%;
 }
 .case-con-list li.hyundai-finance {
   background: url(../images/content/logo-hyundai-finance.png) no-repeat 50% 50%;
@@ -1129,6 +1278,12 @@
 }
 .case-con-list li.sk-hynix {
   background: url(../images/content/logo-sk-hynix.png) no-repeat 50% 50%;
+}
+.case-con-list li.hanhwa {
+  background: url(../images/content/logo-hanhwa.png) no-repeat 50% 50%;
+}
+.case-con-list li.kyobo {
+  background: url(../images/content/logo-kyobo.png) no-repeat 50% 50%;
 }
 .case-con-list li.kyobo-finance {
   background: url(../images/content/logo-kyobo-finance.png) no-repeat 50% 50%;
@@ -1298,11 +1453,41 @@
 .case-con-list li.keb {
   background: url(../images/content/logo-keb.png) no-repeat 50% 50%;
 }
+.case-con-list li.keb-fund {
+  background: url(../images/content/logo-keb-fund.png) no-repeat 50% 50%;
+}
 .case-con-list li.tilon {
   background: url(../images/content/logo-tilon.png) no-repeat 50% 50%;
 }
 .case-con-list li.oracle {
   background: url(../images/content/logo-oracle.png) no-repeat 50% 50%;
+}
+.case-con-list li.nh-bank {
+  background: url(../images/content/logo-nh-bank.png) no-repeat 50% 50%;
+}
+.case-con-list li.nh {
+  background: url(../images/content/logo-nh.png) no-repeat 50% 50%;
+}
+.case-con-list li.nps {
+  background: url(../images/content/logo-nps.png) no-repeat 50% 50%;
+}
+.case-con-list li.chubb {
+  background: url(../images/content/logo-chubb.png) no-repeat 50% 50%;
+}
+.case-con-list li.woori-bank {
+  background: url(../images/content/logo-woori-bank.png) no-repeat 50% 50%;
+}
+.case-con-list li.woori-card {
+  background: url(../images/content/logo-woori-card.png) no-repeat 50% 50%;
+}
+.case-con-list li.mellon-bank {
+  background: url(../images/content/logo-mellon-bank.png) no-repeat 50% 50%;
+}
+.case-con-list li.bluewalnut {
+  background: url(../images/content/logo-bluewalnut.png) no-repeat 50% 50%;
+}
+.case-con-list li.smline {
+  background: url(../images/content/logo-smline.png) no-repeat 50% 50%;
 }
 
 /* 아코디언 전체 레이아웃 */

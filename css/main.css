@@ -931,10 +931,14 @@
   font-size: 1.6rem;
   opacity: 0.5;
   line-height: 1.625; /*height:3.25em;*/
-  height: 1.7em;
+  height: 3.4em;
   overflow: hidden;
   margin-top: 2.5rem;
   opacity: 0.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
 }
 .main-public-slide li a i {
   font-size: 2.4rem;

@@ -29,12 +29,7 @@
 .history_intro {
   margin-bottom: clamp(35px, 9.722vw * 0.5, 50px);
 }
-.history_intro .bg {
-  background-image: url(../../images/img/page_intro_history.jpg);
-}
-.is-mobile .history_intro .bg {
-  background-image: url(../../images/img/page_intro_history_mo.webp);
-}
+
 .history_tit {
   font-size: var(--font-50);
   font-weight: var(--font-bd);
@@ -67,7 +62,7 @@
   background: var(--color-point2);
   transform-origin: 0 0;
   z-index: 1;
-  transition: height 0.2s ease;
+  transition: height 0.3s ease-in-out;
 }
 .history_content .item {
   position: relative;
@@ -109,7 +104,7 @@
 .history_content .month::before {
   content: "";
   display: block;
-  width: 9px;
+  width: 13px;
   aspect-ratio: 1;
   background: var(--color-line5);
   position: absolute;
