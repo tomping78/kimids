@@ -263,7 +263,7 @@
     height: auto;
     gap: 10px;
     left: 0;
-    background: #02316a;
+    background: #002978;
     margin-bottom: 10px;
     padding: 30px 0;
   }
@@ -608,8 +608,17 @@
   .energy-page .sub-drop-menu-style ul li {
     border-top: 1px solid #ddd;
   }
+
+  .intro-top-box .txt-box.blue-box {
+    padding: 2rem;
+  }
+  .intro-top-box .txt-box .txt.information {
+    padding-left: 0;
+    background: none;
+  }
   .case-con-list li {
-    height: 120px;
+    height: 100px;
+    min-width: 240px;
   }
   .table_scroll {
     position: relative;
@@ -765,4 +774,17 @@
   .bbs-top-list-box .board-search-box.style-02 {
     width: 100%;
   }
+  .intro-top-box .list-box li {
+    min-width: 320px;
+    letter-spacing: -0.05em;
+  }
+  /* .case-con-list {
+    gap: 5px;
+  }
+  .case-con-list li {
+    height: 55px;
+    background-size: 55% !important;
+    min-width: 120px;
+    max-width: calc(50% - 5px);
+  } */
 }

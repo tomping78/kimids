@@ -163,7 +163,7 @@
   font-size: 4rem;
   text-align: center;
   padding: 50px;
-  background: #02316a;
+  background: #002978;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -771,16 +771,20 @@
   justify-content: space-between;
   gap: 5px;
 }
-.technical-form .form-area input[type="button"] {
+.technical-form .form-area input[type="button"],
+.technical-form .form-area a {
   background: #c2c2c2;
   font-size: 1.8rem;
+  display: block;
+  text-align: center;
   color: #fff;
   border: none;
   flex: 1 1 50%;
-  padding: 10px;
+  padding: 15px;
   cursor: pointer;
 }
-.technical-form .form-area input[type="button"].active {
+.technical-form .form-area input[type="button"].active,
+.technical-form .form-area a.active {
   background: #02316a;
 }
 /* ----------------------- contact us  ------------------------ */
@@ -916,7 +920,7 @@
 }
 .business-cm-tit .tit {
   font-weight: 700;
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   letter-spacing: -0.075rem;
   color: #222;
   margin-bottom: 4rem;
@@ -948,7 +952,7 @@
   letter-spacing: -0.75px;
   color: #111;
   font-weight: 600;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .intro-top-box .txt-box {
@@ -984,10 +988,13 @@
 }
 .intro-top-box .list-box li {
   position: relative;
-  padding-left: 20px;
+  padding-left: 1.8rem;
   box-sizing: border-box;
   flex: 1 0 50%;
   min-width: 500px;
+  position: relative;
+  line-height: 2.4rem;
+  margin-bottom: 1rem;
 }
 .intro-top-box .list-box li::before {
   content: "";
@@ -995,8 +1002,31 @@
   height: 5px;
   background: #f07000;
   position: absolute;
-  top: calc(50% - 2px);
+  top: 1rem;
   left: 3px;
+}
+.intro-top-box .list-box span {
+  font-weight: 600;
+  color: #111;
+}
+.intro-top-box .list-box.alignLeft {
+  text-align: left;
+}
+.intro-top-box .list-box.number li {
+  padding-left: 3.5rem;
+}
+.intro-top-box .list-box.number li::before {
+  display: none;
+}
+.intro-top-box .list-box.number li span {
+  display: inline-flex;
+  padding: 0.1rem 0.8rem;
+  background: #002978;
+  color: #fff;
+  border-radius: 100px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
 }
 .intro-top-box .img-box {
   width: 100%;
@@ -1079,12 +1109,13 @@
   color: #125aac;
 }
 .mom-box-wrap .mom-box img {
-  width: 80px;
+  width: 7rem;
   margin: 2rem 0 3.5rem;
 }
 .mom-box-wrap .mom-box .mom-subject {
   font-size: 2.4rem;
   font-weight: 700;
+  line-height: 3rem;
   color: #111;
   margin-bottom: 2rem;
 }
@@ -1201,7 +1232,7 @@
   border: 1px solid #e1e1e1;
   flex: 1 1 20%;
   min-width: 240px;
-  height: 180px;
+  height: 170px;
   text-indent: -55555px;
   background-size: auto !important;
 }
@@ -1226,6 +1257,9 @@
 }
 .case-con-list li.samsung-card {
   background: url(../images/content/logo-samsung-card.png) no-repeat 50% 50%;
+}
+.case-con-list li.samsung-pop {
+  background: url(../images/content/logo-samsung-pop.png) no-repeat 50% 50%;
 }
 .case-con-list li.shinhan-bank {
   background: url(../images/content/logo-shinhan-bank.png) no-repeat 50% 50%;
@@ -1292,6 +1326,9 @@
 .case-con-list li.lotte-card {
   background: url(../images/content/logo-lotte-card.png) no-repeat 50% 50%;
 }
+.case-con-list li.lotte-shop {
+  background: url(../images/content/logo-lotte-shop.png) no-repeat 50% 50%;
+}
 .case-con-list li.citi-bank {
   background: url(../images/content/logo-citi-bank.png) no-repeat 50% 50%;
 }
@@ -1318,6 +1355,9 @@
 }
 .case-con-list li.tmoney {
   background: url(../images/content/logo-tmoney.png) no-repeat 50% 50%;
+}
+.case-con-list li.kbfg {
+  background: url(../images/content/logo-kbfg.png) no-repeat 50% 50%;
 }
 .case-con-list li.kb-finance {
   background: url(../images/content/logo-kb-finance.png) no-repeat 50% 50%;
@@ -1489,6 +1529,258 @@
 }
 .case-con-list li.smline {
   background: url(../images/content/logo-smline.png) no-repeat 50% 50%;
+}
+.case-con-list li.kogas {
+  background: url(../images/content/logo-kogas.png) no-repeat 50% 50%;
+}
+.case-con-list li.ex {
+  background: url(../images/content/logo-ex.png) no-repeat 50% 50%;
+}
+.case-con-list li.knto {
+  background: url(../images/content/logo-knto.png) no-repeat 50% 50%;
+}
+.case-con-list li.icpa {
+  background: url(../images/content/logo-icpa.png) no-repeat 50% 50%;
+}
+.case-con-list li.kepco {
+  background: url(../images/content/logo-kepco.png) no-repeat 50% 50%;
+}
+.case-con-list li.icairport {
+  background: url(../images/content/logo-icairport.png) no-repeat 50% 50%;
+}
+.case-con-list li.keco {
+  background: url(../images/content/logo-keco.png) no-repeat 50% 50%;
+}
+.case-con-list li.krnetwork {
+  background: url(../images/content/logo-krnetwork.png) no-repeat 50% 50%;
+}
+.case-con-list li.hf {
+  background: url(../images/content/logo-hf.png) no-repeat 50% 50%;
+}
+.case-con-list li.guc {
+  background: url(../images/content/logo-guc.png) no-repeat 50% 50%;
+}
+.case-con-list li.kdic {
+  background: url(../images/content/logo-kdic.png) no-repeat 50% 50%;
+}
+.case-con-list li.lx {
+  background: url(../images/content/logo-lx.png) no-repeat 50% 50%;
+}
+.case-con-list li.koreapost {
+  background: url(../images/content/logo-koreapost.png) no-repeat 50% 50%;
+}
+.case-con-list li.kcm {
+  background: url(../images/content/logo-kcm.png) no-repeat 50% 50%;
+}
+.case-con-list li.army {
+  background: url(../images/content/logo-army.png) no-repeat 50% 50%;
+}
+.case-con-list li.navy {
+  background: url(../images/content/logo-navy.png) no-repeat 50% 50%;
+}
+.case-con-list li.dtaq {
+  background: url(../images/content/logo-dtaq.png) no-repeat 50% 50%;
+}
+.case-con-list li.dcia {
+  background: url(../images/content/logo-dcia.png) no-repeat 50% 50%;
+}
+.case-con-list li.dcc {
+  background: url(../images/content/logo-dcc.png) no-repeat 50% 50%;
+}
+.case-con-list li.snuh {
+  background: url(../images/content/logo-snuh.png) no-repeat 50% 50%;
+}
+.case-con-list li.kha {
+  background: url(../images/content/logo-kha.png) no-repeat 50% 50%;
+}
+.case-con-list li.vincent {
+  background: url(../images/content/logo-vincent.png) no-repeat 50% 50%;
+}
+.case-con-list li.brmh {
+  background: url(../images/content/logo-brmh.png) no-repeat 50% 50%;
+}
+.case-con-list li.kirams {
+  background: url(../images/content/logo-kirams.png) no-repeat 50% 50%;
+}
+.case-con-list li.nhimc {
+  background: url(../images/content/logo-nhimc.png) no-repeat 50% 50%;
+}
+.case-con-list li.snu {
+  background: url(../images/content/logo-snu.png) no-repeat 50% 50%;
+}
+.case-con-list li.police-ac {
+  background: url(../images/content/logo-police-ac.png) no-repeat 50% 50%;
+}
+.case-con-list li.sungshin-ac {
+  background: url(../images/content/logo-sungshin-ac.png) no-repeat 50% 50%;
+}
+.case-con-list li.kmu-ac {
+  background: url(../images/content/logo-kmu-ac.png) no-repeat 50% 50%;
+}
+.case-con-list li.yonsei-ac {
+  background: url(../images/content/logo-yonsei-ac.png) no-repeat 50% 50%;
+}
+.case-con-list li.cheongju-ac {
+  background: url(../images/content/logo-cheongju-ac.png) no-repeat 50% 50%;
+}
+.case-con-list li.foreign-ac {
+  background: url(../images/content/logo-foreign-ac.png) no-repeat 50% 50%;
+}
+.case-con-list li.sports-ac {
+  background: url(../images/content/logo-sports-ac.png) no-repeat 50% 50%;
+}
+.case-con-list li.mirae-invest {
+  background: url(../images/content/logo-mirae-invest.png) no-repeat 50% 50%;
+}
+.case-con-list li.kdb-invest {
+  background: url(../images/content/logo-kdb-invest.png) no-repeat 50% 50%;
+}
+.case-con-list li.daishin {
+  background: url(../images/content/logo-daishin.png) no-repeat 50% 50%;
+}
+.case-con-list li.ibki {
+  background: url(../images/content/logo-ibki.png) no-repeat 50% 50%;
+}
+.case-con-list li.nh-capital {
+  background: url(../images/content/logo-nh-capital.png) no-repeat 50% 50%;
+}
+.case-con-list li.lg {
+  background: url(../images/content/logo-lg.png) no-repeat 50% 50%;
+}
+.case-con-list li.lg-uplus {
+  background: url(../images/content/logo-lg-uplus.png) no-repeat 50% 50%;
+}
+.case-con-list li.kt-power {
+  background: url(../images/content/logo-kt-power.png) no-repeat 50% 50%;
+}
+.case-con-list li.hanjin {
+  background: url(../images/content/logo-hanjin.png) no-repeat 50% 50%;
+}
+.case-con-list li.yp-books {
+  background: url(../images/content/logo-yp-books.png) no-repeat 50% 50%;
+}
+.case-con-list li.nh-saryo {
+  background: url(../images/content/logo-nh-saryo.png) no-repeat 50% 50%;
+}
+.case-con-list li.gs-mbiz {
+  background: url(../images/content/logo-gs-mbiz.png) no-repeat 50% 50%;
+}
+.case-con-list li.daelim {
+  background: url(../images/content/logo-daelim.png) no-repeat 50% 50%;
+}
+.case-con-list li.yncc {
+  background: url(../images/content/logo-yncc.png) no-repeat 50% 50%;
+}
+.case-con-list li.ob-beer {
+  background: url(../images/content/logo-ob-beer.png) no-repeat 50% 50%;
+}
+.case-con-list li.bmw {
+  background: url(../images/content/logo-bmw.png) no-repeat 50% 50%;
+}
+.case-con-list li.sono {
+  background: url(../images/content/logo-sono.png) no-repeat 50% 50%;
+}
+.case-con-list li.mois {
+  background: url(../images/content/logo-mois.png) no-repeat 50% 50%;
+}
+.case-con-list li.mofa {
+  background: url(../images/content/logo-mofa.png) no-repeat 50% 50%;
+}
+.case-con-list li.msit {
+  background: url(../images/content/logo-msit.png) no-repeat 50% 50%;
+}
+.case-con-list li.moef {
+  background: url(../images/content/logo-moef.png) no-repeat 50% 50%;
+}
+.case-con-list li.na {
+  background: url(../images/content/logo-na.png) no-repeat 50% 50%;
+}
+.case-con-list li.ccourt {
+  background: url(../images/content/logo-ccourt.png) no-repeat 50% 50%;
+}
+.case-con-list li.pps {
+  background: url(../images/content/logo-pps.png) no-repeat 50% 50%;
+}
+.case-con-list li.mma {
+  background: url(../images/content/logo-mma.png) no-repeat 50% 50%;
+}
+.case-con-list li.mpva {
+  background: url(../images/content/logo-mpva.png) no-repeat 50% 50%;
+}
+.case-con-list li.moleg {
+  background: url(../images/content/logo-moleg.png) no-repeat 50% 50%;
+}
+.case-con-list li.opm {
+  background: url(../images/content/logo-opm.png) no-repeat 50% 50%;
+}
+.case-con-list li.nts {
+  background: url(../images/content/logo-nts.png) no-repeat 50% 50%;
+}
+.case-con-list li.kostat {
+  background: url(../images/content/logo-kostat.png) no-repeat 50% 50%;
+}
+.case-con-list li.mnd {
+  background: url(../images/content/logo-mnd.png) no-repeat 50% 50%;
+}
+.case-con-list li.forest {
+  background: url(../images/content/logo-forest.png) no-repeat 50% 50%;
+}
+.case-con-list li.weather {
+  background: url(../images/content/logo-weather.png) no-repeat 50% 50%;
+}
+.case-con-list li.ftc {
+  background: url(../images/content/logo-ftc.png) no-repeat 50% 50%;
+}
+.case-con-list li.motie {
+  background: url(../images/content/logo-motie.png) no-repeat 50% 50%;
+}
+.case-con-list li.mof {
+  background: url(../images/content/logo-mof.png) no-repeat 50% 50%;
+}
+.case-con-list li.moj {
+  background: url(../images/content/logo-moj.png) no-repeat 50% 50%;
+}
+.case-con-list li.mohw {
+  background: url(../images/content/logo-mohw.png) no-repeat 50% 50%;
+}
+.case-con-list li.seoul {
+  background: url(../images/content/logo-seoul.png) no-repeat 50% 50%;
+}
+.case-con-list li.junggu {
+  background: url(../images/content/logo-junggu.png) no-repeat 50% 50%;
+}
+.case-con-list li.gg {
+  background: url(../images/content/logo-gg.png) no-repeat 50% 50%;
+}
+.case-con-list li.chungbuk {
+  background: url(../images/content/logo-chungbuk.png) no-repeat 50% 50%;
+}
+.case-con-list li.busan {
+  background: url(../images/content/logo-busan.png) no-repeat 50% 50%;
+}
+.case-con-list li.gb {
+  background: url(../images/content/logo-gb.png) no-repeat 50% 50%;
+}
+.case-con-list li.sejong {
+  background: url(../images/content/logo-sejong.png) no-repeat 50% 50%;
+}
+.case-con-list li.ulsan {
+  background: url(../images/content/logo-ulsan.png) no-repeat 50% 50%;
+}
+.case-con-list li.jbe {
+  background: url(../images/content/logo-jbe.png) no-repeat 50% 50%;
+}
+.case-con-list li.cbe {
+  background: url(../images/content/logo-cbe.png) no-repeat 50% 50%;
+}
+.case-con-list li.ice {
+  background: url(../images/content/logo-ice.png) no-repeat 50% 50%;
+}
+.case-con-list li.ecrm {
+  background: url(../images/content/logo-ecrm.png) no-repeat 50% 50%;
+}
+.case-con-list li.kcg {
+  background: url(../images/content/logo-kcg.png) no-repeat 50% 50%;
 }
 
 /* 아코디언 전체 레이아웃 */

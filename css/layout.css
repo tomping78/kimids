@@ -354,7 +354,7 @@ td {
 }
 #gnb.total-menu > ul > li .gnb-2dep ul li a {
   display: block;
-  padding: 1.1rem 3rem;
+  padding: 1rem 3rem;
   color: #333;
   font-size: 1.7rem;
   letter-spacing: -0.044em;
@@ -1136,4 +1136,39 @@ td {
 }
 #sitemapContent03.open .sitemap-bg-box {
   left: 0;
+}
+
+.visibility-tab {
+  position: relative;
+}
+.visibility-tab dl {
+  position: relative;
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+.visibility-tab dl dd {
+  padding: 2rem 5rem;
+  background: #e2e2e2;
+  border-radius: 0.8rem;
+  font-size: 2rem;
+  color: #888;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.visibility-tab dl dd:hover {
+  color: #fff;
+  background: #33a9df;
+  box-shadow: 3px 3px 8px -1px rgba(0, 0, 0, 0.25);
+}
+.visibility-tab dl dd.active {
+  background: #02316a;
+  color: #fff;
+  box-shadow: none;
+}
+.visibility-tab > div {
+  transition: all 0.3s;
+}
+.visibility-tab .hide {
+  display: none;
 }

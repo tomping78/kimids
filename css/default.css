@@ -534,6 +534,15 @@ a:hover .over-bg {
   width: 100% !important;
 }
 
+.mT1rem {
+  margin-top: 1rem;
+}
+.mT2rem {
+  margin-top: 2rem;
+}
+.mT3rem {
+  margin-top: 3rem;
+}
 .mB1rem {
   margin-bottom: 1rem;
 }

@@ -593,4 +593,21 @@ $(function () {
       //console.log(tableScrollLeft)
     });
   });
+
+  $(".visibility-tab dd").click(function () {
+    $(".visibility-tab dd").removeClass("active");
+    $(this).addClass("active");
+  });
+  $(".visibility-tab dd:nth-child(1)").click(function () {
+    $(".visibility-tab > div").addClass("hide");
+    $(".visibility-tab .damo1").removeClass("hide");
+  });
+  $(".visibility-tab dd:nth-child(2)").click(function () {
+    $(".visibility-tab > div").addClass("hide");
+    $(".visibility-tab .damo2").removeClass("hide");
+  });
+  $(".visibility-tab dd:nth-child(3)").click(function () {
+    $(".visibility-tab > div").addClass("hide");
+    $(".visibility-tab .damo3").removeClass("hide");
+  });
 });
