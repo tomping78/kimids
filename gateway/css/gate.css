@@ -1,0 +1,468 @@
+.table {
+  display: table;
+  width: 100%;
+}
+.table > div {
+  display: Table-cell;
+}
+.fixbg-ul > div {
+  position: relative;
+  z-index: 11;
+  vertical-align: middle;
+  width: 33.3%;
+}
+.fixbg-ul > div.tongbg02 {
+  width: 30%;
+}
+.tongbg01 .fix-after {
+  background: url(../img/business_bg01_ver1.jpg) no-repeat center center;
+  background-size: cover;
+}
+.tongbg02 .fix-after {
+  background: url(../img/business_bg02.jpg) no-repeat center center;
+  background-size: cover;
+}
+.tongbg03 .fix-after {
+  background: url(../img/business_bg03.jpg) no-repeat right center;
+  background-size: cover;
+}
+.tongbg01 .phi-zup {
+  margin-left: 200px;
+}
+.tongbg03 .phi-zup {
+  margin-right: 200px;
+}
+.pdf-txt:after,
+.pdf-txt span:before,
+.phi-tit,
+.fix-after,
+.phi-actxt,
+.fix-bg > div {
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+  -o-transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.fix-after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 1;
+}
+.phi-zup {
+  position: relative;
+  z-index: 2;
+}
+.phi-tit {
+  font-size: 35px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto 10px;
+}
+.phi-tit span {
+  font-weight: bold;
+}
+.phi-tit img {
+  display: block;
+  margin: 0 auto 50px;
+}
+.phi-tit span {
+  position: relative;
+}
+.phi-tit span:before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 1px;
+  background: #fff;
+  left: 0;
+  top: -10px;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+.phi-tit-row {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+.phi-link {
+  display: table;
+  margin: 0 auto 0;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.phi-link a {
+  display: table;
+  border: 1px solid rgba(255, 255, 255, 1);
+  /* padding: 10px 20px 10px 20px; */
+  /* background: url(../img/arrow-w.png) no-repeat 90% center; */
+  margin: 9px auto;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  width: 180px;
+}
+/* .phi-link a:hover {
+  background: #e7e6e6 url(../img/arrow-b.png) no-repeat 90% center;
+  color: #111;
+} */
+.phi-link a:hover,
+.phi-link a:active,
+.phi-link a:link,
+.phi-link a:focus {
+  text-decoration: none;
+}
+
+.btn {
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 45px;
+  margin: 0 0 2em;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .btn {
+    margin: 0 1em 2em;
+  }
+}
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn-3 {
+  border: 1px solid;
+  overflow: hidden;
+  position: relative;
+}
+.btn-3 span {
+  z-index: 20;
+}
+.btn-3:after {
+  background: #fff;
+  content: "";
+  height: 155px;
+  left: -150px;
+  opacity: 0.3;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  transition: all 850ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 80px;
+  filter: blur(5px);
+  z-index: -10;
+}
+
+.btn-3:hover:after {
+  left: 150%;
+  transition: all 850ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* button hover effect end */
+
+.has-active .phi-link {
+  margin: 40px auto 0;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.phi-actxt01,
+.phi-actxt02 {
+  left: 50%;
+  margin-left: 50px;
+}
+.phi-actxt {
+  position: Absolute;
+  top: 0;
+  width: 480px;
+  display: none;
+}
+.fix-title {
+  font-size: 34px;
+  margin: 0 0 10px 0;
+}
+.phi-actxt * {
+  color: #fff;
+}
+.fix-bg {
+  position: Absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.fix-bg * {
+  color: #fff;
+}
+
+.fix-bg > div {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.fix-bg > div.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+.fix-div01 {
+  background: url(../img/business_bg01.jpg) no-repeat center center;
+  background-size: cover;
+}
+.fix-div02 {
+  background: url(../img/business_bg02.jpg) no-repeat center center;
+  background-size: cover;
+}
+.fix-div03 {
+  background: url(../img/business_bg03.jpg) no-repeat center center;
+  background-size: cover;
+}
+.fix-bg > div > div {
+  display: table-cell;
+  vertical-align: top;
+  padding: 10% 30px 30px 30px;
+}
+.phi-bigtit {
+  font-size: 72px;
+  font-weight: 700;
+  color: #333;
+  position: absolute;
+  top: 4%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 12;
+  text-transform: uppercase;
+}
+.is-active .phi-bigtit {
+  opacity: 1;
+}
+
+.has-active .phi-tit {
+  color: #fff;
+}
+.has-active .phi-actxt {
+  display: block;
+}
+
+.is-active .phi-bigtit {
+  opacity: 1;
+}
+.has-active .icon-ani div,
+.has-active .icon-ani:before,
+.has-active .icon-ani:after {
+  animation: scalepulse 1.3s infinite;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  -ms-animation: scalepulse 1.3s infinite;
+  -ms-animation-timing-function: ease;
+  -ms-animation-fill-mode: both;
+  opacity: 1;
+}
+.has-active .icon-ani:before {
+  animation-delay: 0.3s;
+  width: 56px;
+  height: 56px;
+  left: 0;
+  top: 0;
+}
+.has-active .icon-ani div {
+  width: 24px;
+  height: 24px;
+  left: 17px;
+  top: 17px;
+  background-color: #fff;
+}
+.has-active .icon-ani:after {
+  animation-delay: 0.15s;
+  width: 40px;
+  height: 40px;
+  left: 8px;
+  top: 8px;
+}
+.fix-active .fix-after {
+  width: 0;
+}
+
+.fix-active .brand-wr02 > div {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media only screen and (max-width: 1700px) {
+  .phi-tit {
+    font-size: 30px;
+  }
+  .tongbg01 .phi-zup {
+    margin-left: 70px;
+  }
+  .tongbg03 .phi-zup {
+    margin-right: 70px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .phi-tit {
+    font-size: 24px;
+  }
+  .phi-link a {
+    /* padding: 13px 20px 13px 20px; */
+    background-position: 87% center;
+    width: 180px;
+  }
+  .phi-link a:hover {
+    background-position: 87% center;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .phi-tit img {
+    margin: 0 auto 30px;
+    max-width: 55px;
+  }
+  .phi-tit {
+    font-size: 20px;
+  }
+  .phi-tit-row {
+    font-size: 15px;
+    padding: 0 15px;
+    margin: 8px 0;
+  }
+  .has-active .phi-link {
+    margin: 25px auto 0;
+  }
+  .tongbg01 .phi-zup {
+    margin-left: 55px;
+  }
+  .tongbg03 .phi-zup {
+    margin-right: 55px;
+  }
+  .phi-link a {
+    /* padding: 10px 15px 10px 15px; */
+    margin: 7px 0;
+    width: 145px;
+  }
+  html:lang(en-US) .phi-link a {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 989px) {
+  .fixbg-ul {
+    height: auto !important;
+    min-height: 740px;
+  }
+  .fix-after {
+    height: 100% !important;
+  }
+  .phi-tit-row {
+    min-height: 48px;
+  }
+  .tongbg03 .phi-zup {
+    margin-right: 0;
+  }
+  .tongbg01 .phi-zup {
+    margin-left: 0;
+  }
+  .fixbg-ul > div.tongbg02 {
+    width: 33.3%;
+  }
+  #section03 .flex_cell_inner {
+    padding: 80px 30px 100px;
+  }
+  #section03 .flex_cell_inner:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Add your Mobile Styles here */
+  .phi-tit img {
+    max-width: 45px;
+    margin: 0 auto 28px;
+  }
+  .phi-tit {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+  .phi-tit-row {
+    font-size: 14px;
+    margin: 0;
+    min-height: auto;
+  }
+  .has-active .phi-link {
+    margin-top: 10px;
+  }
+  .phi-link a {
+    /* padding: 7px 15px 7px 15px; */
+    width: 130px;
+    background-size: 30px;
+  }
+  .fixbg-ul {
+    min-height: 440px;
+  }
+  .phi-zup {
+    padding: 80px 0;
+  }
+  .brand-wr02 > div {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 489px) {
+  .table,
+  .table > div,
+  .fixbg-ul > div.tongbg02 {
+    display: block;
+    width: 100%;
+  }
+  .fix-active .fix-after {
+    width: 100%;
+    height: 0 !important;
+  }
+  .phi-zup {
+    padding: 45px 0;
+  }
+  .phi-link {
+    margin-top: -80px;
+  }
+}
+
+.kimi-title {
+  font-size: 15px;
+  font-weight: 300;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 5%;
+  color: #fff;
+  text-transform: uppercase;
+  z-index: 555;
+  opacity: 0.8;
+  letter-spacing: 0.07em;
+}

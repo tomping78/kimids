@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- mobile setting -->
+    <title>Total Solution Provider Company :: KIMI ::</title>
+    <link
+      rel="stylesheet"
+      id="avia-base-css"
+      href="css/base.css"
+      type="text/css"
+      media="all"
+    />
+    <link rel="stylesheet" href="css/gate.css" type="text/css" media="all" />
+    <link rel="icon" href="img/favicon.ico" sizes="any" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+  </head>
+
+  <body id="top" class="helvetica-neue-websave _helvetica_neue">
+    <div id="wrap_all">
+      <div id="main" class="all_colors" data-scroll-offset="0">
+        <div id="section01">
+          <div>
+            <div class="flex_cell_inner">
+              <section class="avia_codeblock_section avia_code_block_0">
+                <div class="avia_codeblock" itemprop="text">
+                  <div class="brand-wr02 table fixbg-ul">
+                    <div class="tongbg tongbg01">
+                      <div class="fix-after"></div>
+                      <div class="phi-zup">
+                        <div class="icon-int"></div>
+                        <p class="phi-tit phi-tit01 en-txt">
+                          <img src="img/main-i01.png" alt="KIMIDS" /><span
+                            >KIMIDS</span
+                          >
+                        </p>
+                        <p class="phi-tit-row">
+                          BPM, EAI, BI&A, SI(GQMS, PBLM)
+                        </p>
+                        <div class="phi-link">
+                          <a
+                            class="btn btn-3"
+                            href="kimids/index.html"
+                            target="_blank"
+                            >바로가기</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tongbg tongbg02">
+                      <div class="fix-after"></div>
+                      <div class="phi-zup">
+                        <div class="icon-int"></div>
+                        <p class="phi-tit phi-tit01 en-txt">
+                          <img src="img/main-i02.png" alt="KIMIDATA" /><span
+                            >KIMIDATA</span
+                          >
+                        </p>
+                        <p class="phi-tit-row">S/W, H/W, 솔루션 및 컨설팅</p>
+                        <div class="phi-link">
+                          <a
+                            class="btn btn-3"
+                            href="http://www.kimi.co.kr"
+                            target="_blank"
+                            >바로가기</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tongbg tongbg03">
+                      <div class="fix-after"></div>
+                      <div class="phi-zup">
+                        <div class="icon-int"></div>
+                        <p class="phi-tit phi-tit01 en-txt">
+                          <img src="img/main-i03.png" alt="KIMIES" /><span
+                            >KIMIES</span
+                          >
+                        </p>
+                        <p class="phi-tit-row">
+                          SIEMENS PLM Software / PLM & SI
+                        </p>
+                        <div class="phi-link">
+                          <a
+                            class="btn btn-3"
+                            href="http://www.kimies.co.kr"
+                            target="_blank"
+                            >바로가기</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="fix-bg">
+                    <div class="fix-div01"></div>
+                    <div class="fix-div02"></div>
+                    <div class="fix-div03"></div>
+                  </div>
+                </div>
+              </section>
+              <section class="av_textblock_section">
+                <p class="kimi-title">Total solution Provider company</p>
+                <div class="avia_textblock" itemprop="text">
+                  <script>
+                    (function ($) {
+                      $(window).ready(function () {
+                        res();
+                        $(window).resize(function () {
+                          res();
+                        });
+                        function res() {
+                          var he = $(window).height();
+                          $(".fixbg-ul, .fix-after").css("height", he);
+                        }
+                      });
+                      $(document).ready(function () {
+                        $(".fixbg-ul > div").each(function () {
+                          var $this = $(this);
+                          var ind = $(this).index();
+                          var eff = $(this).find(".phi-zup");
+                          var txt = $(this).find(".phi-tit");
+
+                          eff.mouseenter(function () {
+                            open();
+                          });
+                          eff.mouseleave(function () {
+                            close();
+                          });
+
+                          function open() {
+                            $(".fixbg-ul > div").removeClass("has-active");
+                            $(".fix-bg > div").removeClass("is-active");
+                            $this.addClass("has-active");
+                            $(".fix-bg > div").eq(ind).addClass("is-active");
+                            $("#section01").addClass("fix-active");
+                          }
+                          function close() {
+                            $(".fixbg-ul > div").removeClass("has-active");
+                            $("#section01").removeClass("fix-active");
+                          }
+                        });
+                      });
+                    })(jQuery);
+                  </script>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <!-- end main -->
+      </div>
+      <!-- end wrap_all -->
+    </div>
+  </body>
+</html>

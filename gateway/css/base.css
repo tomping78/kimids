@@ -1,0 +1,307 @@
+/* Table of Content
+==================================================
+	#Reset & Basics
+	#Basic Styles
+	#Site Styles
+	#Typography
+	#Links
+	#Lists
+	#Images
+	#Buttons
+	#Forms
+	#Table
+	#Misc
+    #WordPress Generated Generics
+*/
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1em;
+  font-family: "Titillium Web", "Lucida Sans", "Lucida Grande",
+    "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+.special-quote {
+  quotes: none;
+}
+.special-quote:before,
+.special-quote:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* #Basic Styles
+================================================== */
+
+html.responsive,
+.responsive body {
+  overflow-x: hidden;
+}
+
+body {
+  color: #111;
+  -webkit-text-size-adjust: 100%;
+  --def: #96b7c4;
+  --inv: #ffffff;
+}
+/* ~~~~~~~~~~~~ GLOBAL SETTINGS ~~~~~~~~~~~~ */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/* #Typography
+================================================== */
+
+/*font-stacks*/
+.lucida-sans-websave {
+  font-family: "Titillium Web", "Lucida Sans", "Lucida Grande",
+    "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+}
+.georgia-websave {
+  font-family: "Georgia", "Times New Roman", Times, serif;
+}
+.arial-websave {
+  font-family: Arial, Helvetica, Verdana, sans-serif;
+}
+.verdana-websave {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.helvetica-websave {
+  font-family: "Titillium Web", "HelveticaNeue", "Helvetica Neue", Arial,
+    Verdana, sans-serif;
+}
+.helvetica-neue-websave {
+  font-family: "Titillium Web", "HelveticaNeue", "Helvetica Neue", Helvetica,
+    Arial, Verdana, sans-serif;
+}
+
+p {
+  margin: 0.85em 0;
+}
+p img {
+  margin: 0;
+}
+p.lead {
+  font-size: 21px;
+  line-height: 27px;
+}
+
+em {
+  font-style: italic;
+}
+strong,
+b {
+  font-weight: bold;
+}
+small {
+  font-size: 80%;
+}
+
+hr {
+  border: solid #ddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 10px 0 30px;
+  height: 0;
+}
+
+/* #Images
+================================================== */
+
+img,
+a img {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  image-rendering: optimizeQuality;
+}
+
+/* #Buttons
+================================================== */
+
+input[type="submit"],
+#submit,
+.button {
+  padding: 9px 22px;
+  cursor: pointer;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0px;
+}
+select::-ms-expand {
+  display: none;
+}
+
+/*playlist shortcode*/
+
+.avia_textblock .wp-playlist {
+  margin: 0;
+}
+.wp-playlist-light .wp-playlist-item.wp-playlist-playing {
+  background: transparent;
+}
+.wp-playlist-current-item img {
+  border-radius: 500px;
+}
+.wp-playlist-current-item img[src$="media/audio.png"] {
+  border-radius: 0px;
+  background: #fff;
+}
+.wp-playlist-item-meta.wp-playlist-item-title {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 990px) {
+  .responsive.av-no-preview #top #wrap_all .av-desktop-hide,
+  .responsive.av-no-preview #top #wrap_all .av-desktop-font-size-hidden,
+  .responsive.av-no-preview #top #wrap_all .av-desktop-font-size-title-hidden {
+    display: none;
+  }
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 989px) {
+  .responsive.av-no-preview #top #wrap_all .av-medium-hide,
+  .responsive.av-no-preview #top #wrap_all .av-medium-font-size-hidden,
+  .responsive.av-no-preview #top #wrap_all .av-medium-font-size-title-hidden {
+    display: none;
+  }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .responsive.av-no-preview #top #wrap_all .av-small-hide,
+  .responsive.av-no-preview #top #wrap_all .av-small-font-size-hidden,
+  .responsive.av-no-preview #top #wrap_all .av-small-font-size-title-hidden {
+    display: none;
+  }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  .responsive.av-no-preview #top #wrap_all .av-mini-hide,
+  .responsive.av-no-preview #top #wrap_all .av-mini-font-size-hidden,
+  .responsive.av-no-preview #top #wrap_all .av-mini-font-size-title-hidden {
+    display: none;
+  }
+}
