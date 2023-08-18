@@ -61,7 +61,7 @@
   .sub-tab-wrapper-style,
   .sub-tab-list-style.top-fixed,
   .sub-tab-list-style ul li a {
-    height: 40px;
+    /* height: 40px; */
   }
   .sub-tab-list-style ul li a em {
     font-size: 13px;
@@ -72,10 +72,11 @@
     position: relative;
   }
   .sub-drop-open-btn-style {
-    display: block;
+    display: flex;
     position: relative;
     padding: 0 15px;
-    height: 40px;
+    height: 6rem;
+    align-items: center;
     line-height: 40px;
     font-size: 15px;
     background-color: #f07000;
@@ -124,7 +125,7 @@
     display: block;
     width: auto;
     height: auto !important;
-    padding: 10px 15px;
+    padding: 2.5rem 2rem;
     border: 0;
   }
   .sub-drop-menu-style ul li a em {
@@ -577,7 +578,8 @@
   .location-info-wrap {
     /* width:calc(100% - 100px); right:50px; */
     width: 100%;
-    top: 0;
+    top: -10rem;
+    right: 0;
     -webkit-transform: translateY(-110%);
     transform: translateY(-110%);
     padding: 15px 15px 10px;

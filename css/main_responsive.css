@@ -88,15 +88,10 @@
 @media all and (max-width: 800px) {
   /* 공통 :: 타이틀 */
   .main-tit-box .main-tit {
-    font-size: 7rem;
+    font-size: 5rem;
   }
   .main-tit-box .main-sub-tit {
     display: none;
-  }
-}
-@media all and (max-width: 800px) {
-  .main-tit-box .main-tit {
-    font-size: 6rem;
   }
 }
 
